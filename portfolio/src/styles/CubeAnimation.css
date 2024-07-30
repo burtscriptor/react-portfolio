@@ -1,0 +1,12 @@
+.main-container {
+    /* height:50vh; */
+}
+
+.child-one {
+    display:flex;
+    justify-content: center;
+}
+
+/* Cube {
+    height: 150%;
+} */

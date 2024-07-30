@@ -1,0 +1,115 @@
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+.projects {
+    height:100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.parent-left, .parent-right {
+    width: 50%;
+    height: 100%;
+ 
+}
+
+
+.parent-left {
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+   
+    margin-left: 50px;
+    padding-right: 50px;
+    
+}
+
+.parent-left h1 {
+    font-size: 10vw;
+    font-weight: 900;
+    text-align: left;
+    width: 100%;
+}
+
+.parent-left h2 {
+    font-size: 6vw;
+   text-align: left;
+   width: 100%;
+}
+
+.parent-left p {
+    font-size: 4vvw;
+    width: 100%;
+    text-align: justify;  
+}
+
+.parent-right {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-right: calc(37px + 17px); /* 17px is the average width of a scrollbar */
+   
+    padding-bottom: 75px;
+}
+
+
+ .image-container {
+    height: 25%;
+    gap:10px;
+    box-sizing:border-box;
+    display:grid;
+    
+   
+ }
+
+
+ .one {
+    background-image: url('../assets/minesweeper/boilerPlate.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+
+ .two {
+    display: flex;
+    gap:10px;
+ }
+
+ .three {
+    background-image: url('../assets/minesweeper/wellDone.png');
+    background-position: center;
+    background-size: cover;
+    background-color: no-repeat;
+ }
+
+ .four {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    gap: 10px;
+ }
+
+ .four span {
+    background-color: grey;
+    height: 100%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .four p {
+    text-align: center;
+ }

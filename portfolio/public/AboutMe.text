@@ -1,0 +1,220 @@
+/* convert font size to vw etc */
+/* could improve small screen size big tect containter */
+
+/* General reset and box-sizing */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.parent-container {
+    height: 100vh;
+    width: 100vw;
+}
+
+
+/* Default styles for larger screens */
+.parent-container {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    background-color: red;
+    height: 100vh;
+}
+
+.big-text-container {
+    grid-column-start: 1;
+    display: grid;
+    grid-template-rows: 220px 220px 220px;
+   
+}
+
+.big-text-one, .big-text-two, .big-text-three {
+    display: flex;
+    justify-content: left;
+    margin-left: 30px;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.big-text-container p {
+    font-size: 7rem;
+    font-weight: 800;
+    gap: 10px;
+}
+
+.small-text-container {
+    background-color: grey;
+    display: grid;
+    grid-template-rows: 0.5fr 1fr;
+}
+
+.small-text-one {
+    grid-row-start: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.small-text-one p {
+    font-size: 1.5rem;
+    
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border: 1px solid white;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.small-text-two {
+    grid-row-start: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.small-text-two p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.down-arrow {
+    position: relative;
+    margin-top: 100px;
+    height: 40px;
+    width: 40px;
+    animation: upDown 3s infinite;
+}
+
+@keyframes upDown {
+    0% {
+        transform: translateY(0%) ;
+    }
+    25% {
+        transform: translateY(25%);
+    }
+    50% {
+        transform: translateY(50%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    
+}
+
+/* Styles for screens with max-width 1920px */
+@media (max-width: 1920px) {
+    .big-text-container {
+        grid-template-rows: 300px 300px 300px;
+    }
+    
+   .big-text-three {
+        padding-bottom: 100px;
+    }
+}
+
+/* Styles for screens with max-width 1440px */
+@media (max-width: 1440px) {
+    .parent-container {
+        grid-template-columns: 1.6fr 1fr;
+        background-color: blue;
+    }
+    
+    .big-text-container {
+        grid-template-rows: 220px 220px 220px;
+    }
+    
+    .big-text-container p {
+        font-size: 6rem;
+        font-weight: 800;
+        gap: 10px;
+    }
+
+    .small-text-container {
+        background-color: orange;
+    }
+
+    .small-text-one p {
+        font-size: 2rem;
+        font-weight: 900;
+        margin-top: -15px;
+    }
+
+    .small-text-two p {
+        font-size: 24px;
+    }
+}
+
+/* Responsive styles for screens with max-width 768px */
+@media (max-width: 457px ) {
+    .small-text-container {
+        height: fit-content;
+        font-size: 4vw;
+    }
+    .small-text-one p {
+        margin-top: 10px;
+        font-size: 10vw; 
+    }
+    .small-text-two p {
+       
+        font-size: 6vw;
+    }
+    .small-text-two {
+        margin-top: 10px;
+
+    }
+    .big-text-one p {
+        font-size: 1vw;
+
+    }
+    .big-text-two p {
+        font-size: 5vw;
+    }
+    .big-text-two p {
+        font-size: 5vw;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .parent-container {
+        grid-template-rows: 600px auto;
+        grid-template-columns: 1fr;
+        background-color: red;
+    }
+
+    .big-text-container {
+        grid-row-start: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: first baseline;
+        
+    }
+
+    .big-text-one, .big-text-two, .big-text-three {
+        padding: 0;
+        margin: 0;
+        
+    }
+    
+    .big-text-container p {
+        font-size: 2rem;
+    }
+
+    .small-text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        grid-row-start: 1;
+        margin-top: 0px;
+        
+    }
+
+    
+}

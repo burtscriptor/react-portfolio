@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+
+}
+
+.welcome-parent {
+    height: 100vh;
+    width: 100vw;
+    background-color: #f0f2f5;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-child {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-child p {
+    padding: 15px 30px;
+      font-size: 36px;
+      color: red;
+      /* background: linear-gradient(45deg, orange, #2575fc); */
+      border-radius: 25px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      outline: none;
+}
+
+.fade-out {
+    animation: Fade 4s forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes Fade {
+    0%{
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.welcome-child img {
+    height: 2rem;
+    rotate: 90deg;
+    animation: Fade 3s forwards;
+    animation-iteration-count: 1;
+}
+
+
+/* welcome-child-two */
+.welcome-child-two {
+    display: flex;
+    height:100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.welcome-child-two input {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    width: 512px;
+}
+
+.welcome-child-two input:focus {
+    border-color: #007bff;
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+    background-color: #eef3ff;
+}
+
+.child-ofwelcome-child-two {
+    display: flex;
+}
+
+.child-ofwelcome-child-two img {
+    height:100px;
+}
+
+.child-ofwelcome-child-two p {
+    top: 35%;
+    left: 45%;
+}
+
+.ontop {
+    position: absolute;
+    z-index: 1;
+}
+
+.small-countdown {
+    height:50px;
+}
+
+.image-correct {
+    height:110px;
+}

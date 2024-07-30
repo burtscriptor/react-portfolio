@@ -1,0 +1,58 @@
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.myStory {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    height: 100vh;
+    width: 100vw;
+}
+
+.theStory {
+   padding:50px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    border:1px solid rgb(255, 0, 13);
+    height: 100%;
+    width: 100%;
+}
+
+.story-left {
+grid-column-start:1;
+border:1px solid rgb(255, 0, 13);
+text-align: left;
+display:flex;
+flex-direction: column;
+justify-content: start;
+align-items:normal;
+width: 100%;
+}
+
+.story-left h1 {
+    font-size: 10vw;
+    font-weight: 900;
+}
+
+.story-image {
+    width: 100%;
+    height: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.story-left img {
+    width:25%;
+}
+
+
+.story-right {
+grid-column-start: 2;
+border:1px solid rgb(255, 0, 13);
+}

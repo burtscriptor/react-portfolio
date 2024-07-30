@@ -1,0 +1,32 @@
+/* Button base styles */
+
+/* pretty happy with this button style */
+button {
+    margin-top: 50px;
+    background: linear-gradient(45deg, #6a5af9, #3b28d1);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover and focus states */
+button:hover,
+button:focus {
+    background: linear-gradient(45deg, #5a47e3, #2e1bbd);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Active state */
+button:active {
+    background: linear-gradient(45deg, #4e3cb4, #261083);
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
