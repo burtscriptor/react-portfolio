@@ -1,6 +1,6 @@
 
 
-import React, {useEffect, useRef } from 'react';
+import React, {useEffect, useRef, useState } from 'react';
 import { Canvas, useFrame, useLoader } from '@react-three/fiber';
 import { TextureLoader } from 'three/src/loaders/TextureLoader';
 import { OrbitControls, ScrollControls, } from '@react-three/drei';
@@ -8,6 +8,7 @@ import { useMotionValue, useSpring } from 'framer-motion';
 import { motion } from 'framer-motion-3d';
 import '../styles/CubeAnimation.css';
 
+// general //
 import image1 from '../assets/fogPattern.avif';
 import image2 from '../assets/blueNature.avif';
 import image3 from '../assets/wave.jpeg';
@@ -15,11 +16,22 @@ import image4 from '../assets/wave2.jpeg';
 import image5 from '../assets/coolProfile.jpg';
 import image6 from '../assets/colorPattern.avif'
 
+// nurse //
+
+import image7 from '../assets/nurse/nurse1.jpg';
+import image8 from '../assets/nurse/nurse2.jpg';
+import image9 from '../assets/nurse/nurse3.jpg';
+import image10 from '../assets/nurse/nurse4.jpg';
+import image11 from '../assets/nurse/nurse1.jpg';
+import image12 from '../assets/nurse/nurse1.jpg';
+
 const Animation = () => {
+   
     return (
         <div className="main-container">
             <div className='child-one'>
-            <Canvas style={{ width: '80px', height: '80px' }}>
+                {/* USE 80PX FOR NAVABR AND 200PX FOR MYSTORY */}
+            <Canvas style={{ width: '100px', height: '100px' }}> 
                 <ambientLight intensity={2} />
                 <directionalLight position={[2,1,1]} />
                 <OrbitControls enableZoom={false} enablePan={false}/>
@@ -63,17 +75,17 @@ function Cube() {
 
      // <motion.mesh ref={mesh} rotation-y={mouse.x} rotation-x={mouse.y} >
 
-    const texture_1 = useLoader(TextureLoader, image1);
-    const texture_2 = useLoader(TextureLoader, image2);
-    const texture_3 = useLoader(TextureLoader, image3);
-    const texture_4 = useLoader(TextureLoader, image4);
-    const texture_5 = useLoader(TextureLoader, image5);
-    const texture_6 = useLoader(TextureLoader, image6);
+    const texture_1 = useLoader(TextureLoader, image7);
+    const texture_2 = useLoader(TextureLoader, image8);
+    const texture_3 = useLoader(TextureLoader, image9);
+    const texture_4 = useLoader(TextureLoader, image10);
+    const texture_5 = useLoader(TextureLoader, image11);
+    const texture_6 = useLoader(TextureLoader, image12);
 
     return (
       
              <motion.mesh ref={mesh} >
-            <boxGeometry args={[ 2.5, 2.5,2.5 ]} />
+            <boxGeometry args={[ 3.6, 3.6,3.6 ]} />
             <meshStandardMaterial map={texture_1} attach="material-0" />
             <meshStandardMaterial map={texture_2} attach="material-1" />
             <meshStandardMaterial map={texture_3} attach="material-2" />

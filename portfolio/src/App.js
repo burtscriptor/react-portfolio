@@ -6,7 +6,13 @@ import MinesweeperTwo from './pages/MinesweeperTwo';
 import SpaceStationLocator from './pages/SpaceStationLocator';
 import SpaceStationLocatorTwo from './pages/SpaceStationLocatorTwo';
 import MyStory from './pages/MyStory';
-import Project3 from './pages/Project3';
+import Transition from './pages/Transition';
+import Community from './pages/Community';
+import Community2 from './pages/Community2';
+import ImageSlider from './components/ImageSlider';
+import Transition2 from './pages/Transition2';
+import Transition3 from './pages/Transition3';
+import Investment from './pages/Investment';
 import './App.css';
 
 
@@ -22,15 +28,20 @@ function App() {
     <div className="App">
      {/* {!landing ? <LandingPage mainApp={mainApp}/> : <AboutMe /> } */}
     
-     {/* <AboutMe />
+     <AboutMe />
      <Minesweeper />
-     <MinesweeperTwo />
+     {/* <MinesweeperTwo />
      <SpaceStationLocator />
-     <SpaceStationLocatorTwo /> */}
+     <SpaceStationLocatorTwo />
+     <Community />
+     <Community2 /> */}
      <MyStory />
-     {/* <Project3 /> */}
+     <Transition /> 
+     <Transition2 />
+     <Transition3 />
+     <Investment />
      
-     
+   
     </div>
   );
 };

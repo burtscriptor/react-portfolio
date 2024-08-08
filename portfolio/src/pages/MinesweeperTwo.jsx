@@ -1,58 +1,61 @@
-import '../styles/MinesweeperTwo.css';
+import {useState, useEffect} from 'react';
+import '../styles/ProjectPage2.css';
 import image1 from '../assets/minesweeper/recussion.png';
 import image4 from '../assets/minesweeper/currentTile.png';
 import image2 from '../assets/minesweeper/makeField.png';
 import image3 from '../assets/minesweeper/initField.png';
 import image5 from '../assets/minesweeper/won.png';
 
+const images = [image1, image2, image3, image4, image5];
+
 const MinesweeperTwo = () => {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIndex((prev) => (prev + 1) % images.length);
+    }, 5000);
+
+    return () => clearInterval(timer); 
+  }, []);
+
   return (
     <main className="m2-project">
-      <div className="m2-parent-left">
-        <h2>Fantastic way to learn:</h2>
-        <p>
-       Code hygiene and dry coding, using loops to create multiple clones of 
-        DOM elements and attach event listeners. Implemented the concept of recursion to 
-        simplify the 'flood effect', it took me sometime to figure it out. Fundermentals of 
-        DOM manipulation and responding to user events, HTML, CSS and JS. Also a good introduction to the spread operator.
+      
+      <div className="m2-upper">
+        <h2>Fantastic things I learnt:</h2>
 
-        </p>
+        <ul>
+          <li>Code hygiene and dry coding</li>
+          <li>Loops to create multiple
+          DOM elements and attach event listeners</li>
+          
+          <li> Fundermentals of 
+          DOM manipulation and responding to user events</li>
+          
+        </ul>
+        <ul>
+         
+          <li>Recursion</li>
+          <li>Using the spread operator</li>
+          <li>HTML, CSS and JavaScript</li>
+        </ul>
+      
+      
+
+      </div>
+      <div className="m2-lower">
+        <div className="m2-image-container">
+         
+        <img src={images[index]} alt={`Slide ${index}`} />
+          
+        </div>
+        <div className="m2-links">
+        <a href="https://burtscriptor.github.io/project1-minesweeper/" className="button-link" target="_blank" rel="noopener noreferrer">Live Demo</a>
+        <a href="https://github.com/burtscriptor/project1-minesweeper" className="button-link" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
 
-      <div className="m2-parent-right">
-        <div className="m2-image-container">
-          <div className="m2-one"></div>
-          
-          <div className="m2-two">
-            <img src={image3} />
-          </div>
-          
-          <div className="m2-three">
-            <img src={image1} />
-            <div className="m2-links">
-              <span>
-                <a href="https://burtscriptor.github.io/project1-minesweeper/">
-                  <p>Play</p>
-                </a>
-              </span>
-              <span>
-                <a href="https://github.com/burtscriptor/project1-minesweeper/blob/main/js/main.js">
-                  <p>Code</p>
-                </a>
-              </span>
-              <span>
-                <a href="https://burtscriptor.github.io/project1-minesweeper/">
-                  <p>Comment</p>
-                </a>
-              </span>
-            </div>
-          </div>
-
-          <div className="m2-four">
-            <img src={image4} />
-            <img src={image5} />
-          </div>
-        </div>
+        
       </div>
     </main>
   );
