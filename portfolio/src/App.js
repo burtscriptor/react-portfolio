@@ -13,6 +13,7 @@ import ImageSlider from './components/ImageSlider';
 import Transition2 from './pages/Transition2';
 import Transition3 from './pages/Transition3';
 import Investment from './pages/Investment';
+import Skills from './pages/Skills'
 import './App.css';
 
 
@@ -28,18 +29,19 @@ function App() {
     <div className="App">
      {/* {!landing ? <LandingPage mainApp={mainApp}/> : <AboutMe /> } */}
     
-     <AboutMe />
+     {/* <AboutMe />
      <Minesweeper />
-     {/* <MinesweeperTwo />
+     <MinesweeperTwo />
      <SpaceStationLocator />
      <SpaceStationLocatorTwo />
      <Community />
      <Community2 /> */}
-     <MyStory />
+     {/* <MyStory /> */}
      <Transition /> 
      <Transition2 />
      <Transition3 />
-     <Investment />
+     {/* <Skills />
+     <Investment /> */}
      
    
     </div>

@@ -8,11 +8,8 @@ const MyStory = () => {
         <div className="myStory">
            <div className="theStory">
             <div className="story">
-                <h2>My story</h2>
-                <p>Thought that helping people was the best thing one could do so I became a</p>
-                <h1>Registered Nurse</h1>
-                <p>Accident and Emergency, Neurosurgical, Cononary Care Unit</p>
-
+                <p>A journey of a thousand miles begins with a single step</p>
+                <h2>Registered Nurse to Software Engineer</h2>
                 <div className="animation-container">
                     <img src={image1} className="redcross"/>
                 <Animation className="animation"/>

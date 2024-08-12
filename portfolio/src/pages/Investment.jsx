@@ -17,7 +17,7 @@ function Investment() {
           <h1>Investing in my transition</h1>
           <h2>General Assembly</h2>
           <p>
-           Software Engineering Immersive course gave me 500 hours of industry style hands on experience with coding and
+           Software Engineering Immersive course gave me 500 hours of industry style hands on experience with SE and
            and seasoned instructors.
           </p>
         </div>

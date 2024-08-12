@@ -19,10 +19,10 @@ const Transition = () => {
            <div className="theStory">
             <div className="story center">
                 <h2>Why software engineering?</h2>
-                <h1>I'm a problem solver!</h1>
+                <p>I love tech and problem solving!</p>
                 <div className="typeContainer">
-                <p className="type-text">A <span className="colortext">{words[index]}</span> problem solves, implements and tests the effectiveness of solutions.</p>
-               
+                <p className="type-text">A <span className="colortext">nurse</span> solves problems, implements and tests the effectiveness of solutions</p>
+                <p className="type-text">A <span className="colortext">software engineer</span> solves problems, implements and tests the effectiveness of solutions</p>
                 </div>
               
                

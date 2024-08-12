@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Transition.css';
+import image1 from '../assets/story/howDoes.jpeg';
+import image2 from '../assets/story/colorHeart.webp';
 
 const words = ['nurse', 'software engineer'];
 
@@ -18,13 +20,16 @@ const Transition2 = () => {
         <div className="myStory">
            <div className="theStory">
             <div className="story center">
-                <h2>Why software engineering?</h2>
-                <h1>Driven to know how things work!</h1>
+                <h2>How does that work?</h2>
+                <p>I have a curious mind!</p>
                 <div className="typeContainer">
-               
-                <p className="type-text">A <span className="colortext2 ">{words[index]}</span> knows how systems work together and as discrete functions.</p>
+                <p className="type-text">A <span className="colortext2 ">nurse</span> knows how a system works as a whole and as discrete units</p>
+                <p className="type-text">A <span className="colortext2 ">software engineer</span> knows how a systems works as a whole and as discrete units</p>
                 </div>
-              
+                <div className="t2-imageContainer">
+                    <img src={image2} />
+                    <img src={image1} />
+                </div>
                
                
             </div>
