@@ -14,6 +14,7 @@ import Transition2 from './pages/Transition2';
 import Transition3 from './pages/Transition3';
 import Investment from './pages/Investment';
 import Skills from './pages/Skills'
+import Scroll from './pages/Scroll';
 import './App.css';
 
 
@@ -28,7 +29,7 @@ function App() {
   return (
     <div className="App">
      {/* {!landing ? <LandingPage mainApp={mainApp}/> : <AboutMe /> } */}
-    
+
      {/* <AboutMe />
      <Minesweeper />
      <MinesweeperTwo />
@@ -36,10 +37,12 @@ function App() {
      <SpaceStationLocatorTwo />
      <Community />
      <Community2 /> */}
-     {/* <MyStory /> */}
+     <MyStory />
+
      <Transition /> 
      <Transition2 />
      <Transition3 />
+
      {/* <Skills />
      <Investment /> */}
      

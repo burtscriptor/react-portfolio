@@ -1,42 +1,47 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Transition.css';
-import image1 from '../assets/story/howDoes.jpeg';
-import image2 from '../assets/story/colorHeart.webp';
 
-const words = ['nurse', 'software engineer'];
+import image1 from '../assets/story/colorHeart.webp';
+
+import image5 from '../assets/story/navigate.png';
+
+
+import image9 from '../assets/story/vitruvian.jpg';
+import image10 from '../assets/story/puzzle.jpg';
+
 
 const Transition2 = () => {
-    const [index, setIndex] = useState(1)
-
-    useEffect(() => {
-        const timer = setInterval(() => {
-            setIndex((prev) => (prev + 1) % words.length)
-
-        }, 3000)
-        return () => clearInterval(timer);
-    }, [])
-
+    const [isHovered, setIsHovered] = useState(false);
+    const [isHovered1, setIsHovered1] = useState(false);
+    const [isHovered2, setIsHovered2] = useState(false);
+    
     return (
         <div className="myStory">
            <div className="theStory">
             <div className="story center">
                 <h2>How does that work?</h2>
-                <p>I have a curious mind!</p>
                 <div className="typeContainer">
-                <p className="type-text">A <span className="colortext2 ">nurse</span> knows how a system works as a whole and as discrete units</p>
-                <p className="type-text">A <span className="colortext2 ">software engineer</span> knows how a systems works as a whole and as discrete units</p>
+                    <div className="text-image" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+                    {!isHovered ? (<p> Bodies have a front-end and a back-end!</p>) : (<p>I have a curious mind!</p>) }
+                    <img src={image9} />
+                        
+                    </div>
+                    <div className={!isHovered1 ? "text-image" : "text-image changeColour"} onMouseEnter={() => setIsHovered1(true)} onMouseLeave={() => setIsHovered1(false)}>
+                <p> A nurse knows how a system works
+                 as a whole and as discrete  units</p>
+                <img src={image1} />
                 </div>
-                <div className="t2-imageContainer">
-                    <img src={image2} />
-                    <img src={image1} />
+                    <div className="text-image" onMouseEnter={()=> setIsHovered2(true)} onMouseLeave={()=> setIsHovered2(false)}>
+                        <p> A software engineer knows how a systems works as a whole and as discrete units</p>
+                        <img src={ !isHovered2 ? image5 : image10 } />
                 </div>
-               
-               
+                
+                </div>
+    
             </div>
             
             
            </div>
-           {/* <p className="fixed">Bodies have a front-end and a back-end!</p> */}
         </div>
     );
 };

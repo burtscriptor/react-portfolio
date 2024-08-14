@@ -2,9 +2,7 @@
   text-align: center;
   scroll-behavior: smooth; 
   overflow-x: hidden;
-  overflow-y: auto; /* Ensure vertical scrolling is enabled */
-  height: 100vh; /* Allow height to grow as needed */
-}
-* {
-  /* border:1px solid lime; */
-}
+  overflow-y: auto; 
+  height: 100vh; 
+} 
+

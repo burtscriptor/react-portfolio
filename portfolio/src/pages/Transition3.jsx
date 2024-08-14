@@ -6,29 +6,30 @@ import image2 from '../assets/story/seTeamwork.jpeg';
 const words = ['nurse', 'software engineer'];
 
 const Transition3 = () => {
-    const [index, setIndex] = useState(1)
-
-    useEffect(() => {
-        const timer = setInterval(() => {
-            setIndex((prev) => (prev + 1) % words.length)
-
-        }, 3000)
-        return () => clearInterval(timer);
-    }, [])
+    const [hovered, setIsHovered] = useState(false);
+    const [hovered1, setIsHovered1] = useState(false);
 
     return (
         <div className="myStory">
            <div className="theStory">
             <div className="story center">
-                <h2>How can I help you?</h2>
-                <p>I'm a people person!</p>
+                <h2>How can I help?</h2>
                 <div className="typeContainer">
-                <p className="type-text">A <span className="colortext2 ">nurse</span> works with-in a multidisclinary team to achieve a patient-centric outcome.</p>
-                <p className="type-text">A <span className="colortext2 ">software engineer</span> works with-in a multidisclinary team to achieve a user-centric outcome.</p>
+                    <div className={!hovered ? "text-image" : "text-image reverse"} onMouseEnter={()=> setIsHovered(true)} 
+             onMouseLeave={()=> setIsHovered(false)}>
+                    <img src={image1} />
+             <p> A nurse works with-in a multidisclinary team to achieve a patient-centric outcome.</p>
+             
+             </div>
+             <div className={!hovered1 ? "text-image" : "text-image reverse"} onMouseEnter={()=> setIsHovered1(true)} 
+             onMouseLeave={()=> setIsHovered1(false)}>
+             <img src={image2} />
+                <p> A software engineer works with-in a multidisclinary team to achieve a user-centric outcome.</p>
+               
+               
+        
+                
                 </div>
-                <div className="t3-imageContainer">
-                <img src={image2} />
-                <img src={image1} />
             </div>
             </div>
 
