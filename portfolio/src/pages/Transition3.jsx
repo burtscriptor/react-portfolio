@@ -11,20 +11,20 @@ const Transition3 = () => {
 
     return (
         <div className="myStory">
-           <div className="theStory">
+           <div className="theStory page">
             <div className="story center">
-                <h2>How can I help?</h2>
+                <h2 className="header-left">How can I help?</h2>
                 <div className="typeContainer">
                     <div className={!hovered ? "text-image" : "text-image reverse"} onMouseEnter={()=> setIsHovered(true)} 
              onMouseLeave={()=> setIsHovered(false)}>
                     <img src={image1} />
-             <p> A nurse works with-in a multidisclinary team to achieve a patient-centric outcome.</p>
+             <p className="transition"> A nurse works with-in a multidisclinary team to achieve a patient-centric outcome.</p>
              
              </div>
              <div className={!hovered1 ? "text-image" : "text-image reverse"} onMouseEnter={()=> setIsHovered1(true)} 
              onMouseLeave={()=> setIsHovered1(false)}>
              <img src={image2} />
-                <p> A software engineer works with-in a multidisclinary team to achieve a user-centric outcome.</p>
+                <p className="transition"> A software engineer works with-in a multidisclinary team to achieve a user-centric outcome.</p>
                
                
         

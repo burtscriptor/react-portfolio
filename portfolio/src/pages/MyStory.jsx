@@ -8,7 +8,7 @@ const MyStory = () => {
         <div className="myStory">
            <div className="theStory">
             <div className="story">
-                <p>A journey of a thousand miles begins with a single step</p>
+                <p className="align-left"> A journey of a thousand miles begins with a single step</p>
                 <h2>Registered Nurse to Software Engineer</h2>
                 <div className="animation-container">
                     <img src={image1} className="redcross"/>

@@ -13,9 +13,6 @@ const Transition = () => {
                 if (entry.isIntersecting) {
                     // Add the 'visible' class when the element is in view
                     entry.target.classList.add('visible');
-                } else {
-                    // Remove the 'visible' class when the element is out of view
-                    entry.target.classList.remove('visible');
                 }
             },
             {
@@ -52,16 +49,17 @@ const Transition = () => {
 
     return (
         <div className="myStory">
-            <div className="theStory">
+            <div className="theStory page">
                 <div  className="story1 center background-image">
                     <h2 ref={h2Ref} className="stickout">Why software engineering?</h2>
-                    <p ref={pRef} className="stickout">I &hearts; [tech] and [problem solving!]</p>
-                    <div  ref={divRef} className="typeContainer stickout">
-                        <p>
-                            A nurse solves problems, implements and tests the effectiveness of solutions
+                    <p ref={pRef} className="stickout ">The introduction of new technologies in nursing had a positive impact on the way I worked.</p>
+                    <p>I want to give the some experience to people</p>
+                    <div ref={divRef} className="typeContainer stickout ">
+                        <p className="transition">
+                            As a nurse I solved problems, implemented and tested solutions
                         </p>
-                        <p >
-                            A software engineer solves problems, implements and tests the effectiveness of solutions
+                        <p className="transition" >
+                            As a software engineer I solve problems, implement and test solutions!
                         </p>
                     </div>
                 </div>

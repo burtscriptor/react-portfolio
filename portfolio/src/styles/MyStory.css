@@ -8,12 +8,17 @@ html, body {
 
 .myStory {
     display:flex;
-   
+    background-color: black;
     justify-content: center;
     align-items: center;
-    border: 1px solid grey;
+
     height: 100vh;
     width: 100vw;
+}
+
+.page {
+    background-color: black;
+    color:white;
 }
 
 .theStory {
@@ -29,20 +34,31 @@ display:flex;
 flex-direction: column;
 justify-content: space-evenly;
 width: 100%;
+background: black;
+color: white;
+
+
 }
 
 h1 {
     font-size: 3rem;
     font-weight: 900;
+    
 }
-
 
 h2 {
     font-size: 2rem;
+   text-align: left;
+   width: 100%;
+}
+
+.align-left {
+    text-align: left;
 }
 
 p {
-    font-size: 0.6rem;
+    font-size: 0.4rem;
+    color:#d3d3d3;
 }
 
 .animation-container {
