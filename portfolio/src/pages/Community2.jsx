@@ -22,7 +22,7 @@ const Community2 = () => {
     <main className="m2-project">
       
       <div className="m2-upper">
-        <h2 id="makesmallh2">Cool things I've done/learnt:</h2>
+        <h2 id="makesmallh2">Contributions & skills:</h2>
 
         <ul>
             <li>Problem solving fellow developers code</li>

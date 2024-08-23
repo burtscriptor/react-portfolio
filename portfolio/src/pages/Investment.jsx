@@ -14,7 +14,7 @@ function Investment() {
     return (
       <main className="projects">
         <div className="parent-left">
-          <h1>Investing in my transition</h1>
+          <h1 id="makeSmallH1">Investing in my transition</h1>
           <h2>General Assembly</h2>
           <p>
            Software Engineering Immersive course gave me 500 hours of industry style hands on experience with SE and
@@ -22,7 +22,7 @@ function Investment() {
           </p>
         </div>
   
-        <div className="parent-right">
+        <div className="parent-right imageSquare">
           <div className="investImageContainer">
             <img src={image1}/>
             <img src={image2}/>

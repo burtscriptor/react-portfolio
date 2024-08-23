@@ -23,7 +23,7 @@ const MinesweeperTwo = () => {
     <main className="m2-project">
       
       <div className="m2-upper">
-        <h2>Fantastic things I learnt:</h2>
+        <h2>What I learnt:</h2>
 
         <ul>
           <li>Code hygiene and dry coding</li>

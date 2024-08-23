@@ -22,19 +22,37 @@ function SpaceStationLocatorTwo() {
   }, []);
 
   return (
-    <main className="m2-project">
-      <div className="m2-upper">
-        <h2>Problems, solutions and lessons:</h2>
+    <main className="m2-project ">
+      
+        <div className="problems&SolutionsHeader">
+        <h2>Problems & solutions:</h2>
+        </div>
+        <div className="m2-upper problemsSolutionsContent">
+        <div className="problems solutions1">
         <ul>
+        <li>Intreprating documentation</li>
           <li>Use of multiple booleans to decide which elements to be rendered</li>
-          <li>Tried to deploy on Heroku but ran into a "Mixed content" error</li>
-          <li>Because the openNotify API uses HTTP and Heroku uses HTTPS</li>
+          
         </ul>
+        </div>
+
+        <div className="problems solutions2">
+       
+        </div>
+
+        <div className="problems solutions3">
         <ul>
-          <li>Research on Stack Overflow => </li>
-          <li>Proxy server to make API call and serve up to the front-end</li>
-          <li>This maintains secure connection throughout</li>
-        </ul>
+         
+         <p>Proxy server to make API call and serve up to the front-end</p>
+         <p>This maintains secure connection throughout</p>
+       </ul>
+
+        </div>
+        
+
+
+
+       
       </div>
       <div className="m2-lower">
         <div className="m2-image-container">

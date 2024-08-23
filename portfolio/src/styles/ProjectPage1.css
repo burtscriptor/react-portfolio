@@ -18,6 +18,7 @@ html, body {
     display: flex;
 }
 
+
 .parent-left, .parent-right {
     width: 50%;
     height: 100%;
@@ -52,6 +53,10 @@ html, body {
     width: 100%;
     text-align: justify;  
     font-size: 1rem;
+    color: orange;
+    /* background-color: #1c4ed7; */
+    padding:25px;
+    /* border:2px solid #b91c1b; */
 }
 
 .parent-right {
@@ -65,7 +70,8 @@ html, body {
     display: flex;
     justify-content: center;
     width: 500px;
-    margin-bottom: 75px;
+    height: 400px;
+    margin-bottom: 6rem;
  }
 
  .image-container img {
@@ -85,6 +91,11 @@ html, body {
 
     .parent-left p {
         font-size: 0.8rem;
+    }
+
+    .image-container {
+        margin-bottom: 7rem;
+        height: 350px;
     }
 
 }
@@ -122,6 +133,7 @@ html, body {
         flex-direction: row;
         justify-content: center;
         width: 100%;
+        margin-bottom: 80px;
     }
 
     .parent-left {
@@ -142,6 +154,10 @@ html, body {
 
     .movedown {
         margin-bottom: 10px;
+    }
+
+    .image-container {
+      margin-bottom: 0px;
     }
 }
 

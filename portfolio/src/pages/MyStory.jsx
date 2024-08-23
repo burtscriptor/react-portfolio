@@ -5,10 +5,10 @@ import image2 from '../assets/nurse/stethoscope.png'
 
 const MyStory = () => {
     return (
-        <div className="myStory">
+        <div className="myStory titlePage">
            <div className="theStory">
             <div className="story">
-                <p className="align-left"> A journey of a thousand miles begins with a single step</p>
+                <p className="align-left">About me</p>
                 <h2>Registered Nurse to Software Engineer</h2>
                 <div className="animation-container">
                     <img src={image1} className="redcross"/>

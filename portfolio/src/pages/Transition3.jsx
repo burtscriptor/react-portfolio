@@ -11,9 +11,9 @@ const Transition3 = () => {
 
     return (
         <div className="myStory">
-           <div className="theStory page">
-            <div className="story center">
-                <h2 className="header-left">How can I help?</h2>
+           <div className="theStory page white">
+            <div className="story center white">
+                <h2 className="header-left">How can I help you?</h2>
                 <div className="typeContainer">
                     <div className={!hovered ? "text-image" : "text-image reverse"} onMouseEnter={()=> setIsHovered(true)} 
              onMouseLeave={()=> setIsHovered(false)}>

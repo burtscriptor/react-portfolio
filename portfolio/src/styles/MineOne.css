@@ -1,0 +1,64 @@
+
+.mine {
+    height: 60dvh;
+    width:100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    padding:0;
+    margin: 0;
+    background-color: aqua;
+}
+
+.mineHeader {
+    display:flex;
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+.mineHeader h2 {
+    width: 100%;
+    text-align: left;
+}
+
+.tile {
+    background-color: darkgrey;
+    width: 100%;
+    height: 100%;
+    border-right: 0.5rem solid grey;
+    border-bottom:0.5rem solid grey;
+    border-left: 0.5rem solid white;
+    border-top:0.5rem solid white ;
+}
+
+.trigger {
+    animation: trigger 2s infinite;
+}
+
+.trigger:hover {
+    cursor: pointer;
+}
+
+@keyframes trigger {
+    0%{
+        transform: translate(0,0);
+    }
+    25%{
+        transform: translate(5px,5px);
+    }
+    50%{
+        transform: translate(-5px,-5px);
+    }
+}
+
+.animate {
+    animation: popOut 2s once;
+}
+
+@key
+
+/* fisnishing writting this pop out function  */

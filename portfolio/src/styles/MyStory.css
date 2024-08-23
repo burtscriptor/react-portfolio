@@ -16,6 +16,10 @@ html, body {
     width: 100vw;
 }
 
+.titlePage {
+    height: 50dvh;
+}
+
 .page {
     background-color: black;
     color:white;

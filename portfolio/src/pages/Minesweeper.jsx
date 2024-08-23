@@ -7,9 +7,9 @@ import image4 from '../assets/minesweeper/boilerPlate.png';
 
 function Minesweeper() {
   return (
-    <main className="projects">
+    <main className="projects mine">
       <div className="parent-left">
-        <h1>Projects</h1>
+        {/* <h1>Projects</h1> */}
         <h2>Minesweeper</h2>
         <p>
          First project with HTML, CSS and JavaScript. 

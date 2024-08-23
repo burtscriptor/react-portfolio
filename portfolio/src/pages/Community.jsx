@@ -7,13 +7,11 @@ function Community() {
   return (
     <main className="projects">
       <div className="parent-left overflow">
-        <h1 id="largeh1">Community Contributions</h1>
+        <h1 id="largeh1">Community</h1>
         <h2 id="smallh2">Blackheath Wind Station</h2>
         <p>
          Setup by paragliders near the take-off site. It meausres windspeed and direction.
          The measurements are displayed on a public website that was built with HTML and JavaScript.
-
-
         </p>
       </div>
 

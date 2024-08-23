@@ -3,18 +3,21 @@ import LandingPage from './pages/LandingPage';
 import AboutMe from './pages/AboutMe';
 import Minesweeper from './pages/Minesweeper';
 import MinesweeperTwo from './pages/MinesweeperTwo';
-import SpaceStationLocator from './pages/SpaceStationLocator';
-import SpaceStationLocatorTwo from './pages/SpaceStationLocatorTwo';
 import MyStory from './pages/MyStory';
 import Transition from './pages/Transition';
 import Community from './pages/Community';
 import Community2 from './pages/Community2';
-import ImageSlider from './components/ImageSlider';
 import Transition2 from './pages/Transition2';
 import Transition3 from './pages/Transition3';
 import Investment from './pages/Investment';
 import Skills from './pages/Skills'
-import Scroll from './pages/Scroll';
+import TechSkills from './pages/TechSkills';
+import Navbar from './components/NavBar';
+import SpaceTwo from './pages/Space2';
+import ComTwo from './pages/Com2';
+import MyServices from './pages/MyServices';
+import SpaceOne from './pages/SpaceOne';
+import MineOne from './pages/MineOne';
 import './App.css';
 
 
@@ -30,22 +33,30 @@ function App() {
     <div className="App">
      {/* {!landing ? <LandingPage mainApp={mainApp}/> : <AboutMe /> } */}
 
-     {/* <AboutMe />
-     <Minesweeper />
+     {/* <AboutMe /> */}
+     {/* <Navbar /> */}
+     <SpaceOne />
+     <SpaceTwo />
+     {/* <Minesweeper /> */}
+     <MineOne />
      <MinesweeperTwo />
-     <SpaceStationLocator />
-     <SpaceStationLocatorTwo />
-     <Community />
-     <Community2 /> */}
-     <MyStory />
+  
+     
+   
+     {/* <Community /> */}
+     {/* <Community2 /> */}
+     {/* <ComTwo />
+     <MyStory /> */}
 
-     <Transition /> 
+     {/* <Transition /> 
      <Transition2 />
-     <Transition3 />
+     <Transition3 /> */}
 
      {/* <Skills />
-     <Investment /> */}
-     
+     <Investment />
+     <MyServices />
+     <TechSkills />
+      */}
    
     </div>
   );
