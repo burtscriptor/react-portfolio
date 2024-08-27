@@ -19,7 +19,7 @@
 .env.production.local
 *.png
 *.jpeg
-/junkPages
+junkPages/
 text.txt
 
 npm-debug.log*
