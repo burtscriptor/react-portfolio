@@ -14,7 +14,7 @@ const SpaceTwo = () => {
                     <img src={icon1} alt="frontend icon" />
                 </div>
                     <h3>Frontend</h3>
-                    <p> Dove into google-react-maps documentation. 
+                    <p> Deep dive into google-react-maps documentation. 
                         Set up APIkeys on Google Cloud Console.</p>
                     <p> Handled errors and data loading using multiple
                          booleans to render elements.</p>

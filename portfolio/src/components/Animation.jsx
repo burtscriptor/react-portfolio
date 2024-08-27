@@ -4,7 +4,7 @@ import React, {useEffect, useRef, useState } from 'react';
 import { Canvas, useFrame, useLoader } from '@react-three/fiber';
 import { TextureLoader } from 'three/src/loaders/TextureLoader';
 import { OrbitControls, ScrollControls, } from '@react-three/drei';
-import { useMotionValue, useSpring } from 'framer-motion';
+// import { useMotionValue, useSpring } from 'framer-motion';
 import { motion } from 'framer-motion-3d';
 import '../styles/CubeAnimation.css';
 
@@ -16,21 +16,13 @@ import image4 from '../assets/wave2.jpeg';
 import image5 from '../assets/coolProfile.jpg';
 import image6 from '../assets/colorPattern.avif'
 
-// nurse //
-
-import image7 from '../assets/nurse/nurse1.jpg';
-import image8 from '../assets/nurse/nurse2.jpg';
-import image9 from '../assets/nurse/nurse3.jpg';
-import image10 from '../assets/nurse/nurse4.jpg';
-import image11 from '../assets/nurse/nurse1.jpg';
-import image12 from '../assets/nurse/nurse1.jpg';
 
 const Animation = () => {
    
     return (
         <div className="main-container">
             
-                {/* USE 80PX FOR NAVABR AND 200PX FOR MYSTORY */}
+               
             <Canvas style={{ width: '100px', height: '100px' }}> 
                 <ambientLight intensity={2} />
                 <directionalLight position={[2,1,1]} />
@@ -75,12 +67,12 @@ function Cube() {
 
      // <motion.mesh ref={mesh} rotation-y={mouse.x} rotation-x={mouse.y} >
 
-    const texture_1 = useLoader(TextureLoader, image7);
-    const texture_2 = useLoader(TextureLoader, image8);
-    const texture_3 = useLoader(TextureLoader, image9);
-    const texture_4 = useLoader(TextureLoader, image10);
-    const texture_5 = useLoader(TextureLoader, image11);
-    const texture_6 = useLoader(TextureLoader, image12);
+    const texture_1 = useLoader(TextureLoader, image1);
+    const texture_2 = useLoader(TextureLoader, image2);
+    const texture_3 = useLoader(TextureLoader, image3);
+    const texture_4 = useLoader(TextureLoader, image4);
+    const texture_5 = useLoader(TextureLoader, image5);
+    const texture_6 = useLoader(TextureLoader, image6);
 
     return (
       
