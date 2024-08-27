@@ -1,28 +1,47 @@
 import '../styles/SpaceTwo.css'
+import icon1 from '../assets/story/web-design.png';
+import icon2 from '../assets/story/web-development.png';
+import icon3 from '../assets/story/computer.png';
 
 const SpaceTwo = () => {
     return (
         <main className="spaceTwo">
-            <div className="spaceTwoHeader">
-                <h2>Learning opportunities</h2>
-            </div>
+
             <div className="spaceTwoContent">
-                <div className="spaceTwoBox first">
+            
+                <div className="spaceTwoBox ">
+                <div className="icon-container">
+                    <img src={icon1} alt="frontend icon" />
+                </div>
                     <h3>Frontend</h3>
-                    <p> Intreprating documentation on google-react-maps and setting up APIkeys on Google Cloud Console</p>
-                    <p> Handling errors and data loading using multiple booleans to decide elements to be rendered</p>
+                    <p> Dove into google-react-maps documentation. 
+                        Set up APIkeys on Google Cloud Console.</p>
+                    <p> Handled errors and data loading using multiple
+                         booleans to render elements.</p>
                 </div>
 
-                <div className="spaceTwoBox second">
+                <div className="spaceTwoBox ">
+                <div className="icon-container">
+                    <img src={icon2} alt="frontend icon" />
+                </div>
                     <h3>Backend</h3>
-                    <p>Tried to deploy on Heroku but ran into a "Mixed content" error - this is a secruity issue</p>
-                    <p>Because the openNotify API uses HTTP and Heroku uses HTTPS</p>
+                    <p>Deployed on Heroku but a "Mixed content" error - prevented loading. 
+                        A secruity issue.</p>
+                    <p>This is because the OpenNotify API uses HTTP, unsecured, 
+                        and Heroku uses HTTPS, secured.</p>
+                    
                 </div>
 
-                <div className="spaceTwoBox third">
+                <div className="spaceTwoBox ">
+                <div className="icon-container">
+                <img src={icon3} alt="fullstack icon" />
+                    </div>
                     <h3>Fullstack</h3>
-                    <p>To solve this wrote a proxy server to make the API call and serve the data to the front-end</p>
-                    <p>This maintained a secure connection throughout the request response cycle and a work around "Mixed content" error</p>
+                    <p>To resolve the error, I used Node and Express.js 
+                        to create a proxy server 
+                        for my frontend to the OpenNotify API, ensuring secure, 
+                        server-side communication.
+                        </p>
                 </div>
 
 

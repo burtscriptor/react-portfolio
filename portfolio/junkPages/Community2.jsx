@@ -1,8 +1,9 @@
 import {useState, useEffect} from 'react';
-import '../styles/ProjectPage2.css';
 import image1 from '../assets/community/CI.png';
 import image2 from '../assets/community/issues.png';
 import image3 from '../assets/community/obs.png';
+import '../styles/ProjectPage2.css';
+
 
 
 const images = [image1, image2, image3];

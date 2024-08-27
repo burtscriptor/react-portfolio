@@ -5,28 +5,31 @@
 }
 
 .techSkills {
-    height: 125dvh;
+    height: 155dvh;
     width: 100dvw;
-    background-color: black;
+    background-color: var(--dark-purple);
     display:flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
 
 .techSkills h2 {
     color:#FFA500;
-    margin: 150px;
+   font-size: 5vmin;
+   margin-top: 5vmin;
 }
 
 .techSkillsContent {
+    margin-top: 5vmin;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: black;
-    height:80%;
+    background-color: var(--light-purple);
+    height:fit-content;
     width: 80dvw;
-    gap:50px;
+    gap:6vmin;
+    border:2vmin solid var(--light-purple);
+    border-radius: 12px;
 }
 
 .col-1 {
@@ -49,6 +52,7 @@
 }
 
 .item-1, .item-2, .item-3, .subjects {
+    margin-bottom: 8vmin;
     flex-grow: 1;
     display:flex;
     flex-direction: column;
@@ -63,26 +67,26 @@
     color:#3982f7;
     border: 2px solid #3982f7;
     width: fit-content;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-right: 32px;
-    padding-left:32px;
-    font-size: 0.5rem;;
+    padding-top: 1.7vmin;
+    padding-bottom: 1.7vmin;
+    padding-right: 3vmin;
+    padding-left:3vmin;
+    font-size: 2vmin;;
 }
 
 .techSkillsContent h3 {
     color: white;
     width: fit-content;
-    font-size:0.9rem;
-    margin-top: 16px;
-    margin-bottom:16px;
+    font-size:3vmin;
+    margin-top: 2vmin;
+    margin-bottom:2vmin;
     text-align: left;
 }
 
 .techSkills p {
     width: fit-content;
     text-align: left;
-    line-height: 0.8rem;
+    line-height: 2.5vmin;
     text-align: justify;
     color:#898d90;
 }
@@ -91,11 +95,12 @@
     width: auto;
     background-color: #172453;
     color:white;
-    padding-top: 16px;
-    padding-left: 32px;
-    padding-bottom: 16px;
-    padding-right: 16px;
-    font-size: 0.7rem;
+    padding-top: 1.7vmin;
+    padding-left: 4vmin;
+    padding-bottom: 1.7vmin;
+    padding-right: 8vmin;
+    font-size: 3vmin;
+    text-decoration:solid;
     margin-bottom: 45px;
 }
 
@@ -109,6 +114,12 @@
         height: fit-content;
     }
 
+}
+
+@media (max-width:1130px) {
+    .techSkillsHeader {
+        margin-top: 10vmin;
+    }
 }
 
 @media (max-width:892px) {

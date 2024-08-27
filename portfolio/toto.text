@@ -20,3 +20,14 @@ general
 - add some animation?
 
 
+<div className="mineHeader ">
+                            <h3>Minesweeper</h3>
+                            <a href="https://github.com/burtscriptor/project1-minesweeper" target="_blank" rel="noopener noreferrer">
+                            <img src={icon1} alt="Github icon" />
+                            </a> 
+                            <a href="https://burtscriptor.github.io/project1-minesweeper/" target="_blank" rel="noopener noreferrer">
+                            <img src={icon2} alt="Go to demo" />
+                            </a>
+                        </div>
+                        <p> </p>
+

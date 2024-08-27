@@ -1,7 +1,7 @@
 import React from 'react';
 import Animation from '../components/Animation';
 import DownloadCv from '../components/DownloadCv';
-import '../styles/AboutMe.css'
+
 import profile from '../assets/AvatarMaker.svg'
 import downArrow from '../assets/arrow.png'
 import Navbar from '../components/NavBar';

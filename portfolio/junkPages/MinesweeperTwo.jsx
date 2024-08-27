@@ -26,19 +26,17 @@ const MinesweeperTwo = () => {
         <h2>What I learnt:</h2>
 
         <ul>
-          <li>Code hygiene and dry coding</li>
-          <li>Loops to create multiple
-          DOM elements and attach event listeners</li>
+          <li></li>
+          <li></li>
           
-          <li> Fundermentals of 
-          DOM manipulation and responding to user events</li>
+          <li> </li>
           
         </ul>
         <ul>
          
-          <li>Recursion</li>
-          <li>Using the spread operator</li>
-          <li>HTML, CSS and JavaScript</li>
+          <li></li>
+          <li></li>
+          <li></li>
         </ul>
       
       

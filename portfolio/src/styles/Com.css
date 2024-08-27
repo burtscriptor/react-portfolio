@@ -1,0 +1,119 @@
+.com {
+    height: 80dvh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.com-header {
+    gap:2vmin;
+    display:flex;
+    flex-direction: column;
+    background-color: var(--light-purple);
+    border: 4vmin solid var(--light-purple);
+    width: 100%;
+}
+
+.com-header-2 h3 {
+    color: black;
+    font-size:5vmin;
+}
+.com-header h2 {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2vmin;
+    color:white;
+    background-color: var(--light-purple);
+    font-size: 5vmin;
+  
+}
+
+.com-header p {
+    font-size: 3vmin;
+}
+
+.com-header a {
+    color:var(--light-blue);
+}
+
+.com-container {
+    margin-top:4vmin;
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    justify-content: center;
+    gap:5vmin;
+    padding:5vmin;
+   grid-template-rows: 22vmin 22vmin;
+   grid-template-columns: 30vmin 30vmin 30vmin;
+   color:white;
+   border-radius: 17px;
+   border:0.2vmin solid lightgray;
+
+}
+
+.com-child {
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vmin;
+   
+}
+
+.com-child:nth-child(1) {
+    background-color: #223e6c;
+    color:white;
+}
+
+.com-child:nth-child(2) {
+    background-color: #189fa5;
+}
+
+.com-child:nth-child(3) {
+    background-color: #2f88f2;
+}
+
+.com-child:nth-child(4) {
+    background-color: #3a3c3e;
+    color:white;
+}
+
+.com-child:nth-child(5) {
+    background-color: #c55544;
+}
+
+.com-child:nth-child(6) {
+    background-color: #286944;
+}
+.com-child img {
+   height: 100%;
+   width: 90%;
+}
+
+@media (max-width: 1250px) {
+  
+    .com-container {
+        grid-template-columns: 22vmin 22vmin 22vmin;
+        grid-template-rows: 15vmin 15vmin ;
+    }
+
+}
+
+@media (max-width: 850px) {
+    .com {
+        height: 90dvh;
+    }
+}
+
+@media (max-width: 650px) {
+    .com {
+        height: 70dvh;
+    }
+}

@@ -1,46 +1,56 @@
 * {
-    padding:0 px;
+    padding:0px;
     margin: 0px;
     box-sizing: border-box;
 }
 
 .spaceOne {
-    height: 60dvh;
+    height: 80dvh;
     width: 100%;
-    border:1px solid lightgreen;
     display:flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
+
+
+#purple {
+    color:var(--light-purple);
+    background: linear-gradient(to top, var(--light-blue) 50%, white 50%);
+}
 
 .spaceOneHeader h2 {
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-bottom: 5vmin;
+    
     height: fit-content;
+    color: black;
 }
 
-.spaceOneHeader span {
-    font-size:2rem;
-    color: orange;
-}
 .spaceOneContent {
-    height: 50%;
+    height: fit-content;
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    width: 80%;
-    margin-bottom: 50px;
-    gap:50px;
-
+    align-items: center;
+    width: 70%;
+    gap:10vmin;
+    border:0vmin solid var(--light-purple);
+    border-radius: 12px;
+    background-color: var(--light-purple);
+    border:4vmin solid var(--light-purple);
+    border-radius: 12px;
+    
 }
 
 .spaceOneImageItem {
     display: flex;
     justify-content: center;
-    background-color: #121826;
     height: 100%;
     width: 50%;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    
 }
 
 .spaceOneImageItem img {
@@ -56,61 +66,73 @@
     display:flex;
     flex-direction: column;
     justify-content: center;
-    gap:20px;
-    line-height: 1rem;
+    gap:1vmin;
+    line-height: 3.5vmin;
 }
 
 .proHeader {
     display:flex;
     flex-direction: row;
     gap:30px;
+    color:var(--light-purple)
+}
+
+.proHeader h3 {
+    color:white;
+}
+
+.spaceText p {
+    font-size: 2vmin; 
+    color: white;
 }
 
 .proHeader img {
-    height: 20px;
-    margin-top: 10px;
+    height: 4vmin;
+    margin-top: -0.5vmin;
     
 }
 
-.tabs {
+.space-tabs {
+    margin-top: 3vmin;
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-evenly;
-    gap:15px;
+    gap:3vmin;
 } 
 
-.tabs p {
-    padding-left: 24px;
-    padding-top: 12px;
-    padding-right: 24px;
-    padding-bottom:12px;
+.space-tabs p {
+    padding-left: 2vmin;
+    padding-top: 1vmin;
+    padding-right: 2vmin;
+    padding-bottom:1vmin;
     border-radius: 12px;
     width: 100%;
     text-align: center;
-    font-size: 0.4rem;
+    font-size: 2vmin;
     color: #d3d3d3;
 }
 
-.tabs p:nth-child(1) {
-    color: darkblue;
+.space-tabs p {
+    color: white;
     border:1px solid darkblue;
+  
 }
 
-.tabs p:nth-child(2) {
-    color: black;
-    border:1px solid darkblue;
+.space-tabs p:nth-child(1) {
+    background-color: var(--blue3) ;
+}
+.space-tabs p:nth-child(2) {
+    background-color: var(--navy);
+
+}
+.space-tabs p:nth-child(3) {
+     background-color: var(--green);
+}
+.space-tabs p:nth-child(4) {
+    background-color: var(--blue2) ;
 }
 
-.tabs p:nth-child(3) {
-    color: blue;
-    border:1px solid blue;
-}
-
-.tabs p:nth-child(4) {
-    color: lightblue;
-    border:1px solid lightblue;
-}
 
 @media (max-width:1195px) {
 .spaceOne {
@@ -123,17 +145,18 @@
         align-items: center;
         width: 100%;
     }
-}
 
-@media (max-width:1100px) {
-    .spaceOneHeader span {
-        font-size: 1.4rem;
+    .spaceOneContent {
+        margin-bottom: 5vmin;
     }
 }
 
+
 @media (max-width:1000px) {
+    
+    
     .spaceOneTextItem {
-        line-height: 0.8rem;
+        line-height: 3.5vmin;
         width: 80%;
     }
 

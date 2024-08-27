@@ -1,4 +1,8 @@
 .main-container {
-    /* height:50vh; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* border:1px solid green; */
+    height: fit-content;
 }
 

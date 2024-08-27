@@ -29,7 +29,7 @@ const Animation = () => {
    
     return (
         <div className="main-container">
-            <div className='child-one'>
+            
                 {/* USE 80PX FOR NAVABR AND 200PX FOR MYSTORY */}
             <Canvas style={{ width: '100px', height: '100px' }}> 
                 <ambientLight intensity={2} />
@@ -37,7 +37,7 @@ const Animation = () => {
                 <OrbitControls enableZoom={false} enablePan={false}/>
                 <Cube />
             </Canvas>
-            </div>
+            
         </div>
     );
 };
