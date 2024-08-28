@@ -4,10 +4,6 @@ import HamburgerMenu from './HamburgerMenu';
 import backgroundImage from '../assets/GroseValley.jpg'; 
 import Animation from './Animation';
 
-// todo 
-// restyle the text size 
-// change the navbar colour scheme
-// get a logo // got image sizedx
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

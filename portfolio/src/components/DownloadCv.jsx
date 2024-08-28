@@ -1,8 +1,8 @@
-// will need to npm install file-saver
+
 import { saveAs }  from 'file-saver'
 import '../styles/Download.css'
 
-//need to style buttn
+
 
 const DownloadCv = () => {
     const handleDownload = () => {

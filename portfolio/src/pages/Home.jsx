@@ -1,6 +1,5 @@
 import '../styles/Home.css';
 import avatar from '../assets/avataaars.svg';
-import image1 from '../assets/dave&cat.jpg';
 import DownloadCv from '../components/DownloadCv';
 
 const Home = () => {

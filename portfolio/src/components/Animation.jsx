@@ -4,7 +4,7 @@ import React, {useEffect, useRef, useState } from 'react';
 import { Canvas, useFrame, useLoader } from '@react-three/fiber';
 import { TextureLoader } from 'three/src/loaders/TextureLoader';
 import { OrbitControls, ScrollControls, } from '@react-three/drei';
-import { useMotionValue, useSpring } from 'framer-motion';
+// import { useMotionValue, useSpring } from 'framer-motion';
 import { motion } from 'framer-motion-3d';
 import '../styles/CubeAnimation.css';
 
@@ -30,7 +30,7 @@ const Animation = () => {
     return (
         <div className="main-container">
             
-                {/* USE 80PX FOR NAVABR AND 200PX FOR MYSTORY */}
+               
             <Canvas style={{ width: '100px', height: '100px' }}> 
                 <ambientLight intensity={2} />
                 <directionalLight position={[2,1,1]} />
