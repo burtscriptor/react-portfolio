@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import '../styles/Contact.css';
 import Animation from '../components/Animation';
-import icon1 from '../assets/icons/mail.png';
-import icon2 from '../assets/icons/linkedin.png';
-import icon3 from '../assets/icons/github.png';
+import icon1 from '../assets/mail.png';
+import icon2 from '../assets/linkedin.png';
+import icon3 from '../assets/github.png';
 
 const Contact = () => {
     const [hoveredImage, setHovered] = useState(null);

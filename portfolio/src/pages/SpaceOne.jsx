@@ -1,18 +1,22 @@
 
+import React, { useState } from 'react';
 import '../styles/SpaceOne.css';
-import image1 from '../assets/iss/opening.png';
-import icon1 from '../assets/icons/github.png';
-import icon2 from '../assets/icons/play-button.png';
+import image1 from '../assets/opening.png';
+import icon1 from '../assets/github.png';
+import icon2 from '../assets/play-button.png';
 
 
 const SpaceOne = () => {
+    const [addClassName, setAddClassname] = useState(false);
     return (
 
         <main className="spaceOne">
             
     
                 <div className="spaceOneContent">
-                    <div className="spaceOneImageItem">
+                    <div className={ !addClassName ? "spaceOneImageItem" : "spaceOneImageItem getDosed"} onMouseEnter={()=> setAddClassname(true)}
+                        onMouseLeave={()=> setAddClassname(false)}
+                    >
                         <img src={image1} alt="main screen"/>
                     </div>
 
@@ -30,8 +34,8 @@ const SpaceOne = () => {
                         <div className="spaceText">
                         <p>The ISS orbits the earth every 90 minutes.
                             Watch it travel accros the global. 
-                            Displays the location of the ISS on an interactive google-react-maps and</p>
-                        <p> updates every seven seconds.</p>
+                            Displays the location of the ISS on an interactive google-react-maps and updates every seven seconds.</p>
+                        <p>What's next? Optimise memory usage.</p>
               </div>
 
               <div className="space-tabs">

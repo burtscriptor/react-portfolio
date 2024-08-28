@@ -8,6 +8,7 @@
     color: white;
 }
 
+
 .spaceTwoContent {
     height: fit-content;
     background-color: white;
@@ -46,6 +47,28 @@
     height: fit-content;
     width: 100%;
     line-height: 1.5rem;
+    
+}
+
+.invisible {
+    opacity: 0;
+}
+
+.spaceTwoBox.visible {
+    opacity: 1;
+    animation: fadeIn 4s forwards;
+}
+@keyframes fadeIn {
+    0%{
+        opacity:0.2;
+    }    
+
+    50%{
+        opacity:0.7;
+    }    
+    100%{
+        opacity: 1;
+    }
 }
 
 .spaceTwoBox h3 {
@@ -71,8 +94,6 @@
     font-family: 'Lato', sans-serif;
     transform: scaleY(1.2);
 }
-
-
 
 @media (max-width:1140px){
     .spaceTwo {

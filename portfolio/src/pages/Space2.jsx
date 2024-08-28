@@ -1,50 +1,62 @@
-import '../styles/SpaceTwo.css'
-import icon1 from '../assets/story/web-design.png';
-import icon2 from '../assets/story/web-development.png';
-import icon3 from '../assets/story/computer.png';
+import React, { useState } from 'react';
+import { Waypoint } from 'react-waypoint';
+import '../styles/SpaceTwo.css';
+import icon1 from '../assets/web-design.png';
+import icon2 from '../assets/web-development.png';
+import icon3 from '../assets/computer.png';
 
 const SpaceTwo = () => {
+    const [isVisible, setIsVisible] = useState([false, false, false]);
+
+    const handleEnter = (index) => {
+        setIsVisible((prevVisibility) => {
+            const newVisibility = [...prevVisibility];
+            newVisibility[index] = true;
+            return newVisibility;
+        });
+    };
+
     return (
         <main className="spaceTwo">
-
             <div className="spaceTwoContent">
-            
-                <div className="spaceTwoBox ">
-                <div className="icon-container">
-                    <img src={icon1} alt="frontend icon" />
-                </div>
-                    <h3>Frontend</h3>
-                    <p> Deep dive into google-react-maps documentation. 
-                        Set up APIkeys on Google Cloud Console.</p>
-                    <p> Handled errors and data loading using multiple
-                         booleans to render elements.</p>
-                </div>
-
-                <div className="spaceTwoBox ">
-                <div className="icon-container">
-                    <img src={icon2} alt="frontend icon" />
-                </div>
-                    <h3>Backend</h3>
-                    <p>Deployed on Heroku but a "Mixed content" error - prevented loading. 
-                        A secruity issue.</p>
-                    <p>This is because the OpenNotify API uses HTTP, unsecured, 
-                        and Heroku uses HTTPS, secured.</p>
-                    
-                </div>
-
-                <div className="spaceTwoBox ">
-                <div className="icon-container">
-                <img src={icon3} alt="fullstack icon" />
+                <Waypoint onEnter={() => handleEnter(0)}>
+                    <div className={isVisible[0] ? "spaceTwoBox visible" : "spaceTwoBox invisible"}>
+                        <div className="icon-container">
+                            <img src={icon1} alt="frontend icon" />
+                        </div>
+                        <h3>Frontend</h3>
+                        <p>Deep dive into google-react-maps documentation. 
+                            Set up API keys on Google Cloud Console.</p>
+                        <p>Handled errors and data loading using multiple
+                            booleans to render elements.</p>
                     </div>
-                    <h3>Fullstack</h3>
-                    <p>To resolve the error, I used Node and Express.js 
-                        to create a proxy server 
-                        for my frontend to the OpenNotify API, ensuring secure, 
-                        server-side communication.
+                </Waypoint>
+
+                <Waypoint onEnter={() => handleEnter(1)}>
+                    <div className={isVisible[1] ? "spaceTwoBox visible" : "spaceTwoBox invisible"}>
+                        <div className="icon-container">
+                            <img src={icon2} alt="backend icon" />
+                        </div>
+                        <h3>Backend</h3>
+                        <p>Deployed on Heroku but a "Mixed content" error prevented loading. 
+                            A security issue.</p>
+                        <p>This is because the OpenNotify API uses HTTP, unsecured, 
+                            and Heroku uses HTTPS, secured.</p>
+                    </div>
+                </Waypoint>
+
+                <Waypoint onEnter={() => handleEnter(2)}>
+                    <div className={isVisible[2] ? "spaceTwoBox visible" : "spaceTwoBox invisible"}>
+                        <div className="icon-container">
+                            <img src={icon3} alt="fullstack icon" />
+                        </div>
+                        <h3>Fullstack</h3>
+                        <p>To resolve the error, I used Node and Express.js 
+                            to create a proxy server for my frontend to the OpenNotify API, 
+                            ensuring secure, server-side communication.
                         </p>
-                </div>
-
-
+                    </div>
+                </Waypoint>
             </div>
         </main>
     );

@@ -1,8 +1,8 @@
 import '../styles/MyServices.css'
 
-import image1 from '../assets/story/web-design.png';
-import image2 from '../assets/story/web-development.png';
-import image3 from '../assets/story/computer.png';
+import image1 from '../assets/web-design.png';
+import image2 from '../assets/web-development.png';
+import image3 from '../assets/computer.png';
 
 const MyServices = () => {
     return (

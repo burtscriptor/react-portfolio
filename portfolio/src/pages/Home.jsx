@@ -1,17 +1,19 @@
 import '../styles/Home.css';
-import avatar from '../assets/story/avataaars.svg';
+import avatar from '../assets/avataaars.svg';
+import image1 from '../assets/dave&cat.jpg';
 import DownloadCv from '../components/DownloadCv';
 
 const Home = () => {
     return (
         <main className="home">
             <div className="home-container">
+           
                 <div className="home-punchline">
-                    <h2>Fullstack engineer, Sydney - {'{He/him}'}</h2>
-
+                    <h2>Fullstack engineer, Sydney </h2>
+                    <p>Hey!I'm Dave, nice to meet you!</p>
                     <h3>
-                        I design and code gorgeous, simple applications, 
-                        and love what I do.
+                        I design and code user-friendly applications, 
+                        and love it!
                     </h3>
                 </div>
 
@@ -19,7 +21,7 @@ const Home = () => {
                     <img src={avatar} alt="avatar" />
                 </div>
 
-                <p>Hey!I'm Dave, nice to meet you!</p>
+               
 
                 <DownloadCv />
             </div>

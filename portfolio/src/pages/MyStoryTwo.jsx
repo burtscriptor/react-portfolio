@@ -1,7 +1,7 @@
 import '../styles/BigCat.css';
-import image1 from '../assets/story/dave&cat.jpg';
-import image4 from '../assets/nurse/nurse4.jpg';
-import image2 from '../assets/story/snow.jpg';
+import image1 from '../assets/dave&cat.jpg';
+import image4 from '../assets/nurse4.jpg';
+import image2 from '../assets/snow.jpg';
 
 const MyStoryTwo = () => {
     return (

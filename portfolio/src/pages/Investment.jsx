@@ -1,15 +1,15 @@
-import image1 from '../assets/icons/bootstrap.svg';
-import image2 from '../assets/icons/css-3.png';
-import image3 from '../assets/icons/html-5.png';
-import image4 from '../assets/icons/js.png';
-import image5 from '../assets/icons/react.png';
-import image6 from '../assets/icons/database.png';
-import image7 from '../assets/icons/nodejs.png';
-import image8 from '../assets/icons/python.png';
-import image9 from '../assets/icons/c-.png';
-import image10 from '../assets/icons/mongodb-icon-2.svg';
-import image11 from '../assets/icons/Django-logo.png';
-import image12 from '../assets/icons/tailwind.png';
+import image1 from '../assets/bootstrap.svg';
+import image2 from '../assets/css-3.png';
+import image3 from '../assets/html-5.png';
+import image4 from '../assets/js.png';
+import image5 from '../assets/react.png';
+import image6 from '../assets/database.png';
+import image7 from '../assets/nodejs.png';
+import image8 from '../assets/python.png';
+import image9 from '../assets/c-.png';
+import image10 from '../assets/mongodb-icon-2.svg';
+import image11 from '../assets/Django-logo.png';
+import image12 from '../assets/tailwind.png';
 import '../styles/Investment.css';
 
 

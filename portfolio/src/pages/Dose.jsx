@@ -1,8 +1,11 @@
-import icon1 from '../assets/icons/github.png';
-import icon2 from '../assets/icons/play-button.png';
-import image1 from '../assets/dose/DoseMaster.png';
+import React, {useState} from 'react';
+import icon1 from '../assets/github.png';
+import icon2 from '../assets/play-button.png';
+import image1 from '../assets/DoseMaster.png';
 
 const Dose = () => {
+    const [addClassName, setAddClassName] = useState(false);
+
     return (
         <>
             <main className="spaceOne">
@@ -11,7 +14,7 @@ const Dose = () => {
                 </div>
 
                 <div className="spaceOneContent">
-                    <div className="spaceOneImageItem">
+                    <div className={ !addClassName ? "spaceOneImageItem" : "spaceOneImageItem getDosed" } onMouseEnter={() => setAddClassName(true)} onMouseLeave={() => setAddClassName(false)}>
                         <img src={image1} alt="main screen" />
                     </div>
 

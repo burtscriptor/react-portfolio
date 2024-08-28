@@ -1,7 +1,7 @@
 import '../styles/Com.css';
 import { useState, useEffect } from 'react';
-import image1 from '../assets/community/CI.png';
-import image2 from '../assets/community/issues.png';
+import image1 from '../assets/CI.png';
+import image2 from '../assets/issues.png';
 
 const images = [image1, image2];
 

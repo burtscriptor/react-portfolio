@@ -1,6 +1,6 @@
-import icon1 from '../assets/icons/github.png';
-import icon2 from '../assets/icons/play-button.png';
-import image1 from '../assets/community/MtBlackHeath.png';
+import icon1 from '../assets/github.png';
+import icon2 from '../assets/play-button.png';
+import image1 from '../assets/MtBlackHeath.png';
 
 const ComOne = () => {
     return (
@@ -15,19 +15,13 @@ const ComOne = () => {
                         <div className="proHeader">
                             <h3>Blackheath Wind Meter</h3>
                             <a
-                                href="https://github.com/burtscriptor/project1-minesweeper"
+                                href="https://github.com/NickRoach/blackheath-wind-meter"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
                                 <img src={icon1} alt="Github icon" />
                             </a>
-                            <a
-                                href="https://burtscriptor.github.io/project1-minesweeper/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <img src={icon2} alt="Go to demo" />
-                            </a>
+                            
                         </div>
 
                         <div className="spaceText">

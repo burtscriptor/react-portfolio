@@ -1,7 +1,7 @@
 import '../styles/SpaceTwo.css';
-import icon1 from '../assets/story/web-design.png';
-import icon2 from '../assets/story/web-development.png';
-import icon3 from '../assets/story/computer.png';
+import icon1 from '../assets/web-design.png';
+import icon2 from '../assets/web-development.png';
+import icon3 from '../assets/computer.png';
 
 const IDineTwo = () => {
     return (
