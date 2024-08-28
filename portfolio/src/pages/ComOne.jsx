@@ -15,19 +15,19 @@ const ComOne = () => {
                         <div className="proHeader">
                             <h3>Blackheath Wind Meter</h3>
                             <a
-                                href="https://github.com/burtscriptor/project1-minesweeper"
+                                href="https://github.com/NickRoach/blackheath-wind-meter"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
                                 <img src={icon1} alt="Github icon" />
                             </a>
-                            <a
+                            {/* <a
                                 href="https://burtscriptor.github.io/project1-minesweeper/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
                                 <img src={icon2} alt="Go to demo" />
-                            </a>
+                            </a> */}
                         </div>
 
                         <div className="spaceText">

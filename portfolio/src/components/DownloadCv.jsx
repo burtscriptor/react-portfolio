@@ -6,8 +6,8 @@ import '../styles/Download.css'
 
 const DownloadCv = () => {
     const handleDownload = () => {
-        const fileUrl = 'robots.txt';
-        saveAs(fileUrl, 'Test.txt')
+        const fileUrl = 'David Burt Resume.pdf';
+        saveAs(fileUrl, 'David Burt Resume.pdf')
 
     };
     return (
