@@ -1,15 +1,15 @@
-import image1 from '../assets/bootstrap.svg';
-import image2 from '../assets/css-3.png';
-import image3 from '../assets/html-5.png';
-import image4 from '../assets/js.png';
-import image5 from '../assets/react.png';
-import image6 from '../assets/database.png';
-import image7 from '../assets/nodejs.png';
-import image8 from '../assets/python.png';
-import image9 from '../assets/c-.png';
-import image10 from '../assets/mongodb-icon-2.svg';
-import image11 from '../assets/Django-logo.png';
-import image12 from '../assets/tailwind.png';
+const image1 = 'https://burtscriptor.github.io/portfolio-images/bootstrap.svg';
+const image2 = 'https://burtscriptor.github.io/portfolio-images/css-3.png';
+const image3 = 'https://burtscriptor.github.io/portfolio-images/html-5.png';
+const image4 = 'https://burtscriptor.github.io/portfolio-images/js.png';
+const image5 = 'https://burtscriptor.github.io/portfolio-images/react.png';
+const image6 = 'https://burtscriptor.github.io/portfolio-images/database.png';
+const image7 = 'https://burtscriptor.github.io/portfolio-images/nodejs.png';
+const image8 = 'https://burtscriptor.github.io/portfolio-images/python.png';
+const image9 = 'https://burtscriptor.github.io/portfolio-images/c-.png';
+const image10 = 'https://burtscriptor.github.io/portfolio-images/mongodb-icon-2.svg';
+const image11 = 'https://burtscriptor.github.io/portfolio-images/Django-logo.png';
+const image12 = 'https://burtscriptor.github.io/portfolio-images/tailwind.png';
 import '../styles/Investment.css';
 
 

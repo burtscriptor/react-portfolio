@@ -1,6 +1,7 @@
 import '../styles/Home.css';
-import avatar from '../assets/avataaars.svg';
 import DownloadCv from '../components/DownloadCv';
+const avatar = 'https://burtscriptor.github.io/portfolio-images/avataaars.svg';
+
 
 const Home = () => {
     return (

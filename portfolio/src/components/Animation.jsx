@@ -9,12 +9,12 @@ import { motion } from 'framer-motion-3d';
 import '../styles/CubeAnimation.css';
 
 // general //
-import image1 from '../assets/fogPattern.avif';
-import image2 from '../assets/blueNature.avif';
-import image3 from '../assets/wave.jpeg';
-import image4 from '../assets/wave2.jpeg';
-import image5 from '../assets/coolProfile.jpg';
-import image6 from '../assets/colorPattern.avif'
+const image1 = 'https://burtscriptor.github.io/portfolio-images/fogPattern.avif';
+const image2 = 'https://burtscriptor.github.io/portfolio-images/blueNature.avif';
+const image3 = 'https://burtscriptor.github.io/portfolio-images/wave.jpeg';
+const image4 = 'https://burtscriptor.github.io/portfolio-images/wave2.jpeg';
+const image5 = 'https://burtscriptor.github.io/portfolio-images/coolProfile.jpg';
+const image6 = 'https://burtscriptor.github.io/portfolio-images/colorPattern.avif'
 
 // nurse //
 

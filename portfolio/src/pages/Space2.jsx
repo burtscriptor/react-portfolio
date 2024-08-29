@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Waypoint } from 'react-waypoint';
 import '../styles/SpaceTwo.css';
-import icon1 from '../assets/web-design.png';
-import icon2 from '../assets/web-development.png';
-import icon3 from '../assets/computer.png';
+const icon1 = 'https://burtscriptor.github.io/portfolio-images/web-design.png';
+const icon2 = 'https://burtscriptor.github.io/portfolio-images/web-development.png';
+const icon3 = 'https://burtscriptor.github.io/portfolio-images/computer.png';
 
 const SpaceTwo = () => {
     const [isVisible, setIsVisible] = useState([false, false, false]);

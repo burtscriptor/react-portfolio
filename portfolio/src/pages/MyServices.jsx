@@ -1,8 +1,7 @@
 import '../styles/MyServices.css'
-
-import image1 from '../assets/web-design.png';
-import image2 from '../assets/web-development.png';
-import image3 from '../assets/computer.png';
+const image1 = 'https://burtscriptor.github.io/portfolio-images/web-design.png';
+const image2 = 'https://burtscriptor.github.io/portfolio-images/web-development.png';
+const image3 = 'https://burtscriptor.github.io/portfolio-images/computer.png';
 
 const MyServices = () => {
     return (

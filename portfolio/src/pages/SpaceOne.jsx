@@ -1,9 +1,9 @@
 
 import React, { useState } from 'react';
 import '../styles/SpaceOne.css';
-import image1 from '../assets/opening.png';
-import icon1 from '../assets/github.png';
-import icon2 from '../assets/play-button.png';
+const image1 = 'https://burtscriptor.github.io/portfolio-images/opening.png';
+const icon1 = 'https://burtscriptor.github.io/portfolio-images/github.png';
+const icon2 = 'https://burtscriptor.github.io/portfolio-images/play-button.png';
 
 
 const SpaceOne = () => {

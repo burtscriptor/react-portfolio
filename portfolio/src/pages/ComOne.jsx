@@ -1,6 +1,5 @@
-import icon1 from '../assets/github.png';
-import icon2 from '../assets/play-button.png';
-import image1 from '../assets/MtBlackHeath.png';
+const icon1 = 'https://burtscriptor.github.io/portfolio-images/github.png';
+const image1 = 'https://burtscriptor.github.io/portfolio-images/MtBlackHeath.png';
 
 const ComOne = () => {
     return (
