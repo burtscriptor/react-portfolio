@@ -16,7 +16,7 @@
 }
 
 .home-punchline p {
- margin-top: 2vmin;
+ margin-bottom: 2vmin;
     font-size: 4vmin;
     color: var(--light-blue);
 }
