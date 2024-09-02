@@ -171,21 +171,26 @@ const AboutMe = () => {
 
         <div className="transferable-skills">
             <div className="skills-header">
-                <h2>Transferable skills</h2>
+              <p>SKILL SETS</p>
+                <h2>Transferable skills.</h2>
             </div>
 
             <div className="skill-cards">
                 <div className="skill-card">
+                  <img src="https://burtscriptor.github.io/portfolio-images/solution.png" alt="Icon for problem solving"/>
                     <p>Problem solving</p>
                 </div>
 
                 <div className="skill-card">
+                  <img src="https://burtscriptor.github.io/portfolio-images/communication.png" alt="Icon for communication" />
                     <p>Communication</p>
                 </div>
                 <div className="skill-card">
+                <img src="https://burtscriptor.github.io/portfolio-images/teamwork.png" alt="Icon for collorbation" />
                 <p>Collorbation</p>
                 </div>
                 <div className="skill-card">
+                <img src="https://burtscriptor.github.io/portfolio-images/solution%20copy.png" alt="Icon creative solutions" />
                 <p>Creative solutions</p>
                 </div>
             </div>
