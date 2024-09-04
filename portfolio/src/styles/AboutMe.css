@@ -1,5 +1,5 @@
 .about-me {
-    height: 400dvh;
+    height: 600dvh;
     width: 100%;
     display:flex;
     flex-direction: column;
@@ -50,7 +50,6 @@
     padding-right:5vmin;
     display:grid;
     grid-template-rows: auto 1fr;
-    border:1px solid red;
     
 }
 
@@ -119,7 +118,6 @@
     padding-right:5vmin;
     display:grid;
     grid-template-rows: auto 1fr;
-    border:1px solid red;
 }
 .skills-header {
     width: 100%;
@@ -162,7 +160,7 @@
    border-color:var(--green);
     padding: 15px;
   border-radius: 15px; 
-  background: linear-gradient(45deg, #f06, var(--light-blue)); 
+  background: linear-gradient(45deg, var(--green), var(--light-blue)); 
   box-shadow: 25px 50px 200px 10px rgb(0,0,0,0.3);
 }
 
@@ -170,12 +168,12 @@
 .skill-card::before {
     content: '';
     position: absolute;
-    top: -5px; /* Adjust based on border width */
+    top: -5px; 
     left: -5px;
     right: -5px;
     bottom: -5px;
-    border-radius: inherit; /* Same border radius */
-    background: white; /* Background color of the content inside */
+    border-radius: inherit; 
+    background: white; 
     z-index: -1;
   }
 
@@ -183,4 +181,62 @@
 .skill-card img {
     height:6vmin;
     width: 6vmin;
+}
+
+.technology-container {
+    display:grid;
+    grid-template-rows: auto 1fr;
+    max-width: 110vmin;
+    padding:5vmin;
+}
+
+.technology-header p {
+    font-size: 1.5vmin;
+    color: var(--light-purple);
+}
+
+.technology-header h2 {
+    font-size: 5vmin;
+    padding-top:1.5vmin;
+}
+
+.technology-icons {
+    padding-top: 4vmin;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap:3.2vmin;
+}
+
+.technology-icon {
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:14vmin;
+    width: 14vmin;
+    border:0.3vmin solid var(--light-purple);
+    border-radius: 15px;
+    
+}
+
+.technology-icon img {
+    height:12vmin;
+    width: 12vmin;
+    position: absolute;
+    padding:2vmin;
+}
+
+.display-over img {
+   opacity: 0.3;
+}
+
+.invisible-text {
+    opacity: 0;
+}
+
+.icon-text-display-over {
+   position: absolute;
+   color: black;
 }

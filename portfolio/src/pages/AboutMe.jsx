@@ -4,28 +4,136 @@ import image1 from '../assets/whaleof.webp';
 import image2 from '../assets/wollongongtheband.webp';
 
 
+const techIcons = [
+  { name: "HTML 5",
+    src: "https://burtscriptor.github.io/portfolio-images/html.png",
+    alt: "HTML 5 icon"
+  },
+
+  { name: "CSS 3",
+    src: "https://burtscriptor.github.io/portfolio-images/css-3.png",
+    alt: "CSS 3 icon"
+  },
+  { name: "Django",
+    src: "https://burtscriptor.github.io/portfolio-images/django.png",
+    alt: "Django icon"
+  },
+  { name: "Git",
+    src: "https://burtscriptor.github.io/portfolio-images/git.png",
+    alt: "Git icon"
+  },
+  { name: "JavaScript",
+    src: "https://burtscriptor.github.io/portfolio-images/js.png",
+    alt: "JavaScript icon"
+  },
+  { name: "MongoDB",
+    src: "https://burtscriptor.github.io/portfolio-images/mongoDB.png",
+    alt: "MongoDB icon"
+  },
+  { name: "Node.js",
+    src: "https://burtscriptor.github.io/portfolio-images/nodejs.png",
+    alt: "Node.js icon"
+  },
+  { name: "Python",
+    src: "https://burtscriptor.github.io/portfolio-images/python.png",
+    alt: "Python icon"
+  },
+  { name: "React.js",
+    src: "https://burtscriptor.github.io/portfolio-images/react.png",
+    alt: "React.js icon"
+  },
+  { name: "Tailwind",
+    src: "https://burtscriptor.github.io/portfolio-images/tailwind.png",
+    alt: "Tailwind icon"
+  },
+  { name: "PostgreSQL",
+    src: "https://burtscriptor.github.io/portfolio-images/postgresql.png",
+    alt: "PostgreSQL icon"
+  },
+  { name: "Three.js",
+    src: "https://burtscriptor.github.io/portfolio-images/three.png",
+    alt: "Three.js icon"
+  },
+  { name: "Express.Js",
+    src: "https://burtscriptor.github.io/portfolio-images/bootstrap.png",
+    alt: "Express.js icon"
+  },
+  { name: "Figma",
+    src: "https://burtscriptor.github.io/portfolio-images/figma.png",
+    alt: "Figma icon"
+  }
+];
+
+
 const AboutMe = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [invisible, setInvisilbe] = useState(false);
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [mouseMove, setMouseMove] = useState(false);
+  const [icons, setIcons] = useState([]);
+  const [index, setIndex] = useState(null);
+  
+
+  const handleIndex = (i) => {
+    setIndex(i);
+  };
+
+
+  const generateIcons = () => {
+    const iconArray = []
+      for(let i = 0; i < techIcons.length; i++) {
+        iconArray.push(<div className={ index == i ? "technology-icon display-over" : "technology-icon" } onMouseEnter={()=> handleIndex(`${i}`)}
+         onMouseLeave={() => setIndex(null)}>
+          <img src={techIcons[i].src} alt={techIcons[i].alt}/>
+          <p className={ index == i ? "icon-text-display-over" : "invisible-text"}>{techIcons[i].name}</p> 
+          </div>)
+      };
+      setIcons([iconArray])
+  };
+  
+  useEffect(()=> {
+    generateIcons();
+  }, [index]);
+
+
+  useEffect(() => {
+    const handleMouseMove = (event) => {
+      const element = document.querySelector('.skill-card'); // Update to your element selector
+      const rect = element.getBoundingClientRect();
+      const centerX = rect.left + rect.width / 2;
+      const centerY = rect.top + rect.height / 2;
+    
+      const rotateX = (event.clientY - centerY) / 20;
+      const rotateY = (event.clientX - centerX) / 20;
+    
+      setMousePosition({ x: rotateX, y: rotateY });
+    };
+
+    if (mouseMove) {
+      document.addEventListener('mousemove', handleMouseMove);
+    } else {
+      document.removeEventListener('mousemove', handleMouseMove);
+    }
+
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, [mouseMove]);
 
   useEffect(() => {
     const handleScroll = () => {
       
-      const scroll = window.scrollY;
-      setScrollPosition(scroll);
-      if(scroll > 800) {
-        console.log("Scroll position:", scroll);
+      const scrollY = window.scrollY;
+      setScrollPosition(scrollY );
+      if(scrollY > 800) {
         setInvisilbe(true);
-
       }else{
         setInvisilbe(false);
       }
 
     };
-
     window.addEventListener("scroll", handleScroll);
 
-   
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -176,7 +284,12 @@ const AboutMe = () => {
             </div>
 
             <div className="skill-cards">
-                <div className="skill-card">
+                <div className= "skill-card" style={{
+              transform: mouseMove
+                ? `perspective(1000px) rotateX(${mousePosition.x}deg) rotateY(${mousePosition.y}deg) scale3d(1, 1, 1)`
+                : "",
+            }} 
+                   onMouseEnter={() => setMouseMove(true) } onMouseLeave={()=> setMouseMove(false)}>
                   <img src="https://burtscriptor.github.io/portfolio-images/solution.png" alt="Icon for problem solving"/>
                     <p>Problem solving</p>
                 </div>
@@ -195,8 +308,54 @@ const AboutMe = () => {
                 </div>
             </div>
         </div>
+
+        <div className="transferable-skills">
+            <div className="skills-header">
+              <p>SKILL SETS</p>
+                <h2>Engineering skills.</h2>
+            </div>
+
+            <div className="skill-cards">
+                <div className="skill-card">
+                  <img src="https://burtscriptor.github.io/portfolio-images/web-development.png" alt="Icon for web development"/>
+                    <p>Web Development</p>
+                </div>
+
+                <div className="skill-card">
+                  <img src="https://burtscriptor.github.io/portfolio-images/server-side.png" alt="Icon for communication" />
+                    <p>Server Side Construction</p>
+                </div>
+                <div className="skill-card">
+                <img src="https://burtscriptor.github.io/portfolio-images/mobile.png" alt="Icon for collorbation" />
+                <p>Mobile App Development</p>
+                </div>
+                <div className="skill-card">
+                <img src="https://burtscriptor.github.io/portfolio-images/debugging.png" alt="Icon creative solutions" />
+                <p>Quality Assurance</p>
+                </div>
+            </div>
+        </div>
+        
+      <div className="technology-container">
+        <div className="technology-header">
+<p>WHAT I HAVE EXPERIENCE IN</p>
+<h2>Technologies.</h2>
+        </div>
+       <div className="technology-icons">
+        {icons}
+       </div>
+      </div>
+
+
+
     </main>
   );
 };
 
 export default AboutMe;
+
+// onMouseEnter{()=> someting true}
+// if somethinertrue then style = transform: perspective(1000px)(make bigger)
+// rotateX(MOUSEX)?
+// rotateY(deg)
+// scale3D(1,1,1) 
