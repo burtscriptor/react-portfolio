@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import '../styles/AboutMe.css';
 import image1 from '../assets/whaleof.webp';
 import image2 from '../assets/wollongongtheband.webp';
+import { transform } from 'framer-motion';
 
 
 const techIcons = [
@@ -65,25 +66,50 @@ const techIcons = [
 ];
 
 
+const skills = [
+  {name: "Problem Solving", src: "https://burtscriptor.github.io/portfolio-images/solution.png", alt: "Problem Solving icon"},
+  {name: "Communication", src: "https://burtscriptor.github.io/portfolio-images/communication.png", alt: "Communication icon"},
+  {name: "Collabortion", src: "https://burtscriptor.github.io/portfolio-images/teamwork.png", alt: "Collabortion icon"},
+  {name: "Creative Solutions", src: "https://burtscriptor.github.io/portfolio-images/solution%20copy.png", alt: "Creative Solutions icon"}
+];
+
+
 const AboutMe = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [invisible, setInvisilbe] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [mouseMove, setMouseMove] = useState(false);
   const [icons, setIcons] = useState([]);
+  const [cards, setCards] = useState([]);
   const [index, setIndex] = useState(null);
+  
   
 
   const handleIndex = (i) => {
     setIndex(i);
   };
 
+  const generateSkillCards = () => {
+      const skillCardsArray = [];
+      for(let i = 0; i < skills.length; i++){
+        skillCardsArray.push(
+        <div className="skill-card" style={{ transform: i == index ?
+           `perspective(1000px) rotateX(${mousePosition.x}deg) rotateY(${mousePosition.y}deg) scale3d(1, 1, 1)`  : "" }}
+            onMouseEnter={()=> handleIndex(i)} 
+            onMouseLeave={()=> setIndex(null)}>
+              <p>{skills[i].name}</p>
+              <img src={skills[i].src} alt={skills[i].alt}/>
+              </div>)
+      };
+      setCards([skillCardsArray]);
+  };
 
   const generateIcons = () => {
     const iconArray = []
       for(let i = 0; i < techIcons.length; i++) {
-        iconArray.push(<div className={ index == i ? "technology-icon display-over" : "technology-icon" } onMouseEnter={()=> handleIndex(`${i}`)}
-         onMouseLeave={() => setIndex(null)}>
+        iconArray.push(<div className={ index == i ? "technology-icon display-over" : "technology-icon" }
+           onMouseEnter={()=> handleIndex(`${i}`)}
+           onMouseLeave={() => setIndex(null)}>
           <img src={techIcons[i].src} alt={techIcons[i].alt}/>
           <p className={ index == i ? "icon-text-display-over" : "invisible-text"}>{techIcons[i].name}</p> 
           </div>)
@@ -93,6 +119,7 @@ const AboutMe = () => {
   
   useEffect(()=> {
     generateIcons();
+    generateSkillCards();
   }, [index]);
 
 
@@ -284,28 +311,7 @@ const AboutMe = () => {
             </div>
 
             <div className="skill-cards">
-                <div className= "skill-card" style={{
-              transform: mouseMove
-                ? `perspective(1000px) rotateX(${mousePosition.x}deg) rotateY(${mousePosition.y}deg) scale3d(1, 1, 1)`
-                : "",
-            }} 
-                   onMouseEnter={() => setMouseMove(true) } onMouseLeave={()=> setMouseMove(false)}>
-                  <img src="https://burtscriptor.github.io/portfolio-images/solution.png" alt="Icon for problem solving"/>
-                    <p>Problem solving</p>
-                </div>
-
-                <div className="skill-card">
-                  <img src="https://burtscriptor.github.io/portfolio-images/communication.png" alt="Icon for communication" />
-                    <p>Communication</p>
-                </div>
-                <div className="skill-card">
-                <img src="https://burtscriptor.github.io/portfolio-images/teamwork.png" alt="Icon for collorbation" />
-                <p>Collorbation</p>
-                </div>
-                <div className="skill-card">
-                <img src="https://burtscriptor.github.io/portfolio-images/solution%20copy.png" alt="Icon creative solutions" />
-                <p>Creative solutions</p>
-                </div>
+               {cards}
             </div>
         </div>
 

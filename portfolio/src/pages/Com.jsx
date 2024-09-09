@@ -18,6 +18,9 @@ const Com = () => {
 
     return (
         <main className="com">
+            <div className="com-header">
+                <h2>Key learnings</h2>
+            </div>
             <div className="com-container">
                 <div className="com-child">Streamlined CI/CD using GitHub actions.</div>
                 <div className="com-child">Editing .YAML files for CI/CD.</div>

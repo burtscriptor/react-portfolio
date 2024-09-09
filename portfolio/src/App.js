@@ -14,8 +14,8 @@ import './App.css';
 function App() {
     return (
         <div className="App">
-            {/* <Home /> */}
-            {/* <Dose />
+            <Home />
+            <Dose />
             <DoseTwo />
             <Dine />
             <IDineTwo />
@@ -23,11 +23,9 @@ function App() {
             <SpaceTwo />
             <ComOne />
             <Com />
-            <Contact /> */}
-        
-            <AboutMe />
+            <Contact />
         </div>
     );
-}
+};
 
 export default App;

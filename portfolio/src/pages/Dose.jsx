@@ -31,6 +31,7 @@ const Dose = () => {
                             <a
                                 href="https://dmv1-bd9d90030ccc.herokuapp.com/"
                                 target="_blank"
+                            
                                 rel="noopener noreferrer"
                             >
                                 <img src={icon2} alt="Go to demo" />

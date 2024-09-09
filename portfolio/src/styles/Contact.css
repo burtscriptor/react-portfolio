@@ -1,5 +1,5 @@
 .contact {
-    /* border:1px solid red; */
+    margin-top: 5vmin;
     height: 70dvh;
     width: 100%;
      background: linear-gradient(to top, var(--light-purple) 88%, white 10%);
@@ -36,21 +36,23 @@
     border:0.2vmin solid var(--green);
     border-radius: 50px;
     color: white;
-    padding: 2vmin 4vmin;
+    padding: 1vmin 2vmin;
     font-size: 2vmin;
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 2vmin;
 }
+
 
 .coffee p {
     font-size: 2.5vmin;
+   
 }
 
 .contact-body {
-    
     margin-top: -10vmin;
     height: fit-content;
     width: 20%;
@@ -109,4 +111,49 @@
 
 .rights {
     margin-top: 60vmin;
+}
+
+
+@media (max-width:1243px) {
+    .contact-header {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width:1000px) {
+    .contact-body {
+        margin-bottom: 10vmin;
+    }
+
+}
+
+@media (max-width:850px) {
+    .contact-body {
+        margin-bottom: 10vmin;
+    }
+
+}
+
+@media (max-width:650px) {
+    .contact-body {
+        margin-bottom: 15vmin;
+    }
+
+}
+
+@media (max-width:500px) {
+    .contact-body {
+        margin-bottom: 15vmin;
+        margin-top: -15vmin;
+    }
+
+}
+
+@media (max-width:400px) {
+    .contact-body {
+        margin-bottom: 15vmin;
+        margin-top: -25vmin;
+    }
+
 }

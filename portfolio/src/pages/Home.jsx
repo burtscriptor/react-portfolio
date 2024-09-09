@@ -22,9 +22,6 @@ const Home = () => {
                 <div className="home-image">
                     <img src={avatar} alt="avatar" />
                 </div>
-
-               
-
                 <DownloadCv />
             </div>
         </main>
