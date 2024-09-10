@@ -1,17 +1,13 @@
-import React, {useState} from 'react';
 const icon1 = 'https://burtscriptor.github.io/portfolio-images/github.png';
 const icon2 = 'https://burtscriptor.github.io/portfolio-images/play-button.png';
 const image1 = 'https://burtscriptor.github.io/portfolio-images/inclusiveDine.png';
 
 const Dine = () => {
-    const [addClassName, setAddClassName] = useState(false);
-
     return (
         <>
             <main className="spaceOne">
                 <div className="spaceOneContent">
-                    <div className={ !addClassName ? "spaceOneImageItem" : "spaceOneImageItem getDosed"} onMouseEnter={()=> setAddClassName(true)} 
-                    onMouseLeave={()=> setAddClassName(false)}>
+                    <div className="spaceOneImageItem">
                         <img src={image1} alt="main screen" />
                     </div>
 

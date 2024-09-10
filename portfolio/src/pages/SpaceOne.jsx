@@ -1,5 +1,3 @@
-
-import React, { useState } from 'react';
 import '../styles/SpaceOne.css';
 const image1 = 'https://burtscriptor.github.io/portfolio-images/opening.png';
 const icon1 = 'https://burtscriptor.github.io/portfolio-images/github.png';
@@ -7,16 +5,10 @@ const icon2 = 'https://burtscriptor.github.io/portfolio-images/play-button.png';
 
 
 const SpaceOne = () => {
-    const [addClassName, setAddClassname] = useState(false);
     return (
-
         <main className="spaceOne">
-            
-    
                 <div className="spaceOneContent">
-                    <div className={ !addClassName ? "spaceOneImageItem" : "spaceOneImageItem getDosed"} onMouseEnter={()=> setAddClassname(true)}
-                        onMouseLeave={()=> setAddClassname(false)}
-                    >
+                    <div className="spaceOneImageItem">
                         <img src={image1} alt="main screen"/>
                     </div>
 

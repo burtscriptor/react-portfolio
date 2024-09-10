@@ -35,10 +35,10 @@
     align-items: center;
     width: 70%;
     gap:10vmin;
-    border:0vmin solid var(--light-purple);
+    border:0vmin solid var(--light-blue);
     border-radius: 12px;
-    background-color: var(--light-purple);
-    border:4vmin solid var(--light-purple);
+    background-color: var(--light-blue);
+    border:4vmin solid var(--light-blue);
     border-radius: 12px;
 }
 
@@ -51,17 +51,12 @@
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.getDosed img, .getDosedCom img {
-   transition: transform 0.3s ease;
-}
 
-.getDosed:hover img {
+.spaceOneImageItem img:hover {
     transform: scale(2);
+    transition: transform 0.3s ease;
 }
 
-.getDosedCom:hover img {
-    transform: scale(1.5);
-}
 
 .spaceOneImageItem img {
     object-fit: cover;

@@ -17,6 +17,31 @@
     margin-bottom: 5vmin;
 }
 
+.home-text {
+    margin-top: 5vmin;
+    padding-top: 5vmin;
+    padding-bottom: 6vmin;
+    gap:3vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--light-blue);
+    color:white;
+    height: fit-content;
+}
+
+.home-text h2 {
+    font-size: 4vmin;
+}
+
+.home-text p {
+    color:white;
+    width: 50%;
+    font-size: 2vmin;
+    line-height: 3.5vmin;
+}
+
 .home-punchline p {
  margin-bottom: 2vmin;
     font-size: 4vmin;
@@ -31,14 +56,16 @@
     height: fit-content;
 }
 
-.home-punchline h3 {
+.home-punchline p {
     font-size: 3vmin ;
     margin-top: 2vmin;
     font-family: 'Lato', sans-serif;
+    color:black;
 }
 
 .home-image {
-    margin-top: 4vmin;
+    margin-top: 1vmin;
+    margin-bottom: 3vmin;
 }
 
 .home-image img {

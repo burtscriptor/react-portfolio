@@ -105,7 +105,7 @@
     box-sizing:content-box;
 }
 
-.contact-icons img.hovered {
+.contact-icons img:hover {
     background-color: red;
 }
 

@@ -1,16 +1,13 @@
-import React, {useState} from 'react';
 const icon1 = 'https://burtscriptor.github.io/portfolio-images/github.png';
 const image1 = 'https://burtscriptor.github.io/portfolio-images/MtBlackHeath.png';
 
 const ComOne = () => {
-    const [addClassName, setAddClassName] = useState(false);
-
     return (
         <>
             <main className="spaceOne">
                 <div className="spaceOneContent">
-                    <div className={ !setAddClassName ? "spaceOneImageItem" : "spaceOneImageItem getDosedCom"} onMouseEnter={()=> setAddClassName(true)} onMouseLeave={()=> setAddClassName(false)}>
-                        <img src={image1} alt="main screen" />
+                    <div className="spaceOneImageItem" >
+                        <img src={image1} alt="main screen" loading="lazy"/>
                     </div>
 
                     <div className="spaceOneTextItem">
@@ -28,7 +25,7 @@ const ComOne = () => {
 
                         <div className="spaceText">
                             <p>
-                                Contributing to this project started by a paraglider. 
+                                Contributing to this project started by a senior developer. 
                                 It measures windspeed and direction at the Blackheath 
                                 launch site.
                             </p>

@@ -1,11 +1,8 @@
-import React, {useState} from 'react';
 const icon1 = 'https://burtscriptor.github.io/portfolio-images/github.png';
 const icon2 = 'https://burtscriptor.github.io/portfolio-images/play-button.png';
 const image1 ='https://burtscriptor.github.io/portfolio-images/DoseMaster.png';
 
 const Dose = () => {
-    const [addClassName, setAddClassName] = useState(false);
-
     return (
         <>
             <main className="spaceOne">
@@ -14,7 +11,7 @@ const Dose = () => {
                 </div>
 
                 <div className="spaceOneContent">
-                    <div className={ !addClassName ? "spaceOneImageItem" : "spaceOneImageItem getDosed" } onMouseEnter={() => setAddClassName(true)} onMouseLeave={() => setAddClassName(false)}>
+                    <div className="spaceOneImageItem">
                         <img src={image1} alt="main screen" />
                     </div>
 
