@@ -15,6 +15,8 @@
     flex-direction: column;
     margin-top: 5vmin;
     margin-bottom: 5vmin;
+    justify-content: center;
+    align-items: center;
 }
 
 .home-text {
@@ -29,6 +31,7 @@
     background-color: var(--light-blue);
     color:white;
     height: fit-content;
+    width: 100vw;
 }
 
 .home-text h2 {
@@ -37,15 +40,18 @@
 
 .home-text p {
     color:white;
-    width: 50%;
-    font-size: 2vmin;
+    width: 100%;
+    font-size: 3vmin;
     line-height: 3.5vmin;
+    text-align: center;
+    max-width: 45ch;
 }
 
 .home-punchline p {
  margin-bottom: 2vmin;
     font-size: 4vmin;
     color: var(--light-blue);
+    text-align: center;
 }
 
 
@@ -64,12 +70,16 @@
 }
 
 .home-image {
-    margin-top: 1vmin;
-    margin-bottom: 3vmin;
+    margin-top: 5vmin;
+    margin-bottom: 1vmin;
 }
 
 .home-image img {
-    height: 30vmin;
+    height: 15vmin;
+    width: 15vmin;
+    border:0.5vmin solid var(--green);
+    border-radius: 70%;
+    object-fit: cover;
 }
 
 @media (max-width:900px) {
