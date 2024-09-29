@@ -84,7 +84,7 @@ const Projects = () => {
     return (
         <main className="projects">
             <div className="projects_header">
-                <h2>Sample of my work</h2>
+                <h2>Projects</h2>
                 </div>
 
                 <div className="project_selector">

@@ -8,7 +8,7 @@ const Home = () => {
         <main className="home">
             <div className="home-container">
                 
-                <div className="home-punchline">
+                <div className="home-punchline-title">
                     <h2>Hi! I'm Dave.</h2>
                     <p>Software Engineer, Sydney - Design, develop & deploy.</p>
                 </div>
@@ -21,7 +21,7 @@ const Home = () => {
                     <h2>Hi! I'm Dave, nice to meet you!</h2>
                     <p>
                         I am a logician and creative with a passion for solving complex problems. 
-                        Whether it's optimizing front-end interfaces to create seamless user experiences, 
+                        Whether it's optimising front-end interfaces to create seamless user experiences, 
                         or structuring scalable APIs, I grow with the challenges of development. 
                         My passion lies in crafting apps and teaming up with people. While others might catch up on 
                         the latest episode of "Nonsense" on Binge, I find my guilty pleasure in honing my coding skills and collorbating on music projects.
