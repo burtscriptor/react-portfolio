@@ -53,9 +53,9 @@ const Contact = () => {
                 </div>
             </div>
 
-            <div className="contact-body" ref={animationRef}>
+            {/* <div className="contact-body" ref={animationRef}>
                 {isInView && <Animation className="contact-animation" loading="lazy" />}
-            </div>
+            </div> */}
 
             <div className="contact-text">
                 <p>Growing, gaining, and getting better each day.</p>
