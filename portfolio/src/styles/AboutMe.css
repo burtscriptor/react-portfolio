@@ -4,15 +4,19 @@
     display:flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
+
+/* * {
+    border:1px solid red;
+} */
 
 .about-banner-image { 
     background-image: url('https://burtscriptor.github.io/portfolio-images/bridge.jpg');
     background-size: cover;
     background-position: center;
     height: 40vmin;
-    width: 60%;
-    
+    width: 100%;
 }
 
 .about-header h1 {
@@ -36,10 +40,9 @@
 .about-me-text {
     height: fit-content;
     width: fit-content;
-    max-width: 110vmin;
     padding-top: 5vmin;
-    padding-left: 5vmin;
-    padding-right:5vmin;
+    padding-left: 40vmin;
+    padding-right:40vmin;
     display:grid;
     grid-template-rows: auto 1fr;
     
@@ -62,16 +65,14 @@
 
 .about-me-text-container-two {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    width: 100%;
-    height: 100%;
+    grid-template-columns: auto 1fr;
 }
 
 .child-one, .child-two {
     display: flex;
     flex-direction: column;
     align-items:center;
-    justify-content: centers;
+    justify-content: center;
     padding-top: 3vmin;
 }
 
@@ -94,7 +95,6 @@
     line-height: 3vmin;
     font-size: 2vmin;
     color:black;
-    
 }
 
 .child-two {
@@ -110,11 +110,8 @@
     margin-top: 5vmin;
     height: fit-content;
     width: fit-content;
-    max-width: 110vmin;
     padding-top: 5vmin;
     padding-bottom: 5vmin;
-    padding-left: 5vmin;
-    padding-right:5vmin;
     display:flex;
     flex-direction:column;
     justify-content: center;
@@ -138,7 +135,7 @@
 
 .skill-cards {
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 20vmin 20vmin 20vmin 20vmin;
     gap:5vmin;
 }
 
@@ -183,7 +180,7 @@
 .technology-container {
     display:grid;
     grid-template-rows: auto 1fr;
-    max-width: 110vmin;
+    max-width: 80vmin;
     padding:5vmin;
 }
 
@@ -215,7 +212,12 @@
     width: 14vmin;
     border:0.3vmin solid var(--light-purple);
     border-radius: 15px;
-    
+}
+
+.technology-icon p {
+    font-size: 2vmin;
+    color:black;
+    z-index: 99999;
 }
 
 .technology-icon img {
@@ -235,5 +237,4 @@
 
 .icon-text-display-over {
    position: absolute;
-   color: black;
 }

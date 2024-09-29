@@ -119,7 +119,7 @@ const AboutMe = () => {
   useEffect(() => {
     generateIcons();
     generateSkillCards();
-  }, );
+  }, [index]);
 
   return (
     <>    

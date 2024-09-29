@@ -4,13 +4,13 @@ import "../styles/Download.css"
 
 const DownloadCv = () => {
     const handleDownload = () => {
-        const fileUrl = "Dave_Burt_Resume.pdf";
+        const fileUrl = process.env.PUBLIC_URL + "Dave_Burt_Resume.pdf";
         saveAs(fileUrl, "Dave_Burt_Resume.pdf")
 
     };
     return (
         <div className="parent-cv" >
-           <button type="buttom" onClick={handleDownload}>Download my CV</button>
+           <button type="bottom" onClick={handleDownload}>Download my CV</button>
         </div>
     );
 };

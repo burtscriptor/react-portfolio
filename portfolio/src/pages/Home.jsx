@@ -9,8 +9,8 @@ const Home = () => {
             <div className="home-container">
                 
                 <div className="home-punchline">
-                    <h2>Software Engineer, Sydney</h2>
-                    <p>The intersection of app development and collaboration is where I excel.</p>
+                    <h2>Hi! I'm Dave.</h2>
+                    <p>Software Engineer, Sydney - Design, develop & deploy.</p>
                 </div>
 
                 <div className="home-image">
