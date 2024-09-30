@@ -69,7 +69,7 @@ const techIcons = [
 const skills = [
   {name: "Problem Solving", src: "https://burtscriptor.github.io/portfolio-images/solution.png", alt: "Problem Solving icon"},
   {name: "Communication", src: "https://burtscriptor.github.io/portfolio-images/communication.png", alt: "Communication icon"},
-  {name: "Collabortion", src: "https://burtscriptor.github.io/portfolio-images/teamwork.png", alt: "Collabortion icon"},
+  {name: "Collaboration", src: "https://burtscriptor.github.io/portfolio-images/teamwork.png", alt: "Collabortion icon"},
   {name: "Creative Solutions", src: "https://burtscriptor.github.io/portfolio-images/solution%20copy.png", alt: "Creative Solutions icon"}
 ];
 
