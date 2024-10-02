@@ -9,8 +9,8 @@ const Home = () => {
             <div className="home-container">
                 
                 <div className="home-punchline-title">
-                    <h2>Hi! I'm Dave.</h2>
-                    <p>Software Engineer, Sydney - Design, develop & deploy.</p>
+                    <h2>G'day! I'm Dave.</h2>
+                    <p>A Software Engineer from Sydney living on Gadigal Land</p>
                 </div>
 
                 <div className="home-image">
@@ -18,7 +18,7 @@ const Home = () => {
                 </div>
 
                 <div className="home-text">
-                    <h2>Hi! I'm Dave, nice to meet you!</h2>
+                    <h2>Hi! Nice to meet you!</h2>
                     <p>
                         I am a logician and creative with a passion for solving complex problems. 
                         Whether it's optimising front-end interfaces to create seamless user experiences, 

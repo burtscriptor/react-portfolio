@@ -19,7 +19,7 @@
 }
 
 .project_selector {
-    width: 75vmin;
+    width: 80vmin;
     display:flex;
     flex-direction: row;
     border-radius:15px;

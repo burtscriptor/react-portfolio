@@ -10,6 +10,7 @@ const image1 = "https://burtscriptor.github.io/portfolio-images/DoseMaster.png";
 const image2 = "https://burtscriptor.github.io/portfolio-images/inclusiveDine.png";
 const image3 = "https://burtscriptor.github.io/portfolio-images/opening.png";
 const image4 = "https://burtscriptor.github.io/portfolio-images/MtBlackHeath.png";
+const image5 = "https://burtscriptor.github.io/portfolio-images/home.png";
 
 
 const projectsInfoArray = [
@@ -68,7 +69,21 @@ const projectsInfoArray = [
        text: [ "We have been using GitHub issues system to assign and take ownership of ongoing feature development and changes."]},
     ],
     links: ["",""]
-    }
+    },
+
+    { name: "Affordable Commute Calculator", image: `${image5}`, text: "A team project react web app that looks up property sales in Sydney relative to a a user defined point of interest and sorts according to travel time. Authenicated users can create and edit a list of favourited and saved properties. ",
+      technologies: [ 'MongoDb', 'Express.js', 'React', 'Node.js'], 
+      keyPointOne: [ { title: "Collaboration", 
+        text: ["Daily huddles to discuss planning, progress and self allocate development. We used git branchs to develop in silo and then merged with main at the end of the day.", "Some tasks we used pair programming to draw on each others knowledge and skill set simultaneously." ]}
+    ],
+      keyPointTwo: [ {title: "API payload",
+         text: ["One of my roles was to extract nested data from an external API payload, pass it to another component and then filter it by a set criteria"]}
+    ],
+      keyPointThree: [ {title: "MERN stack",
+        text: ["I learned how to effectively manage both front-end and back-end development. I gained a deep understanding of how to create RESTful APIs using Express and Node.", " I improved my skills in React, building reusable components and managing state with hooks. I also learned how to handle asynchronous requests, ensuring smooth data flow between the client and server."]}
+    ], 
+    links: [ "https://github.com/tdha/project-three", " https://affordable-commute-finder-0838a0fdbb94.herokuapp.com/"]  
+    },
     
 ];
 
@@ -92,7 +107,10 @@ const Projects = () => {
                     <div className="cards" onMouseEnter={()=> handleIndex(1)}>Project 2</div>
                     <div className="cards" onMouseEnter={()=> handleIndex(2)}>Project 3</div>
                     <div className="cards" onMouseEnter={()=> handleIndex(3)}>Project 4</div>
+                    <div className="cards" onMouseEnter={()=> handleIndex(4)}>Project 5</div>
                 </div>
+
+            
 
                 <div className="project_container">
                     <div className="p_c_child_left">
@@ -114,12 +132,12 @@ const Projects = () => {
                         </div>
 
                         <div className="project_link_icons">
-                        <a href={projectsInfoArray[index].links[0]} target="_blank" rel="noopener noreferrer">
-    <img src={icon1} alt="Link 1" />
-</a>
-<a href={projectsInfoArray[index].links[1]} target="_blank" rel="noopener noreferrer">
-    <img src={icon2} alt="Link 2" />
-</a>
+                            <a href={projectsInfoArray[index].links[0]} target="_blank" rel="noopener noreferrer">
+                                <img src={icon1} alt="Link 1" />
+                            </a>
+                            <a href={projectsInfoArray[index].links[1]} target="_blank" rel="noopener noreferrer">
+                                <img src={icon2} alt="Link 2" />
+                            </a>
                         </div>
 
                         <div className="tech_tabs">
@@ -167,7 +185,7 @@ const Projects = () => {
 
                     </div>
                 </div>
-
+           
         </main>
     );
 
