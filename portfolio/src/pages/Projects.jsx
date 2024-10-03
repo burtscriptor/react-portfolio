@@ -77,7 +77,7 @@ const projectsInfoArray = [
         text: ["Daily huddles to discuss planning, progress and self allocate development. We used git branchs to develop in silo and then merged with main at the end of the day.", "Some tasks we used pair programming to draw on each others knowledge and skill set simultaneously." ]}
     ],
       keyPointTwo: [ {title: "API payload",
-         text: ["One of my roles was to extract nested data from an external API payload, pass it to another component and then filter it by a set criteria"]}
+         text: ["One of my roles was to extract nested data from an external API payload, pass it to another component and then filter it by a set criteria."]}
     ],
       keyPointThree: [ {title: "MERN stack",
         text: ["I learned how to effectively manage both front-end and back-end development. I gained a deep understanding of how to create RESTful APIs using Express and Node.", " I improved my skills in React, building reusable components and managing state with hooks. I also learned how to handle asynchronous requests, ensuring smooth data flow between the client and server."]}
@@ -127,7 +127,7 @@ const Projects = () => {
                     <div className="p_c_child_left">
                     
                         <div className="project_image">
-                            <img src={projectsInfoArray[index].image} />
+                            <img src={projectsInfoArray[index].image} alt="Screenshoot of project"/>
                         </div>
                        
                        <div className="text_container">
@@ -177,7 +177,7 @@ const Projects = () => {
                         <div className="key_points_one">
                         <div className="icon_title">
                             <div className="icon_container">
-                                <img src={icon3} />
+                                <img src={icon3} alt="Frontend Icon" />
                             </div>
                             <h5>{projectsInfoArray[index].keyPointOne[0].title}</h5>
                         </div>    
@@ -187,7 +187,7 @@ const Projects = () => {
                         <div className="key_points_two">
                             <div className="icon_title">
                                 <div className="icon_container">
-                                <img src={icon4} />
+                                <img src={icon4} alt="Backend Icon" />
                                 </div>
                                 <h5>{projectsInfoArray[index].keyPointTwo[0].title}</h5>
                                 </div>    
@@ -197,7 +197,7 @@ const Projects = () => {
                         <div className="key_points_three">
                         <div className="icon_title">
                                 <div className="icon_container">
-                                <img src={icon5} />
+                                <img src={icon5} alt="Fullstack Icon" />
                                 </div>
                                 <h5>{projectsInfoArray[index].keyPointThree[0].title}</h5>
                         </div>        

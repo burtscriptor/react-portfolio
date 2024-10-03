@@ -43,9 +43,9 @@
 }
 
 .home-text p {
-    color:white;
+    color:var(--green);
     width: 100%;
-    font-size: 5vmin;
+    font-size: 3vmin;
     line-height: 5.5vmin;
     text-align: center;
     max-width: 45ch;

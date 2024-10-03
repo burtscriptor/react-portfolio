@@ -10,7 +10,7 @@ const Home = () => {
                 
                 <div className="home-punchline-title">
                     <h2>G'day! I'm Dave.</h2>
-                    <p>A Software Engineer from Sydney living on Gadigal Land</p>
+                    <p>I'm a collaborative Software Engineer from Sydney</p>
                 </div>
 
                 <div className="home-image">
@@ -20,10 +20,10 @@ const Home = () => {
                 <div className="home-text">
                     <h2>Hi! Nice to meet you!</h2>
                     <p>
-                        I am a logician and creative with a passion for solving complex problems. 
+                        I love logic and creativity and my passion is combining both for solve complex problems. 
                         Whether it's optimising front-end interfaces to create seamless user experiences, 
                         or structuring scalable APIs, I grow with the challenges of development. 
-                        My passion lies in crafting apps and teaming up with people. While others might catch up on 
+                        I thrive on crafting apps and collaborating with people. While others might catch up on 
                         the latest episode of "Nonsense" on Binge, I find my guilty pleasure in honing my coding skills and collorbating on music projects.
                     </p>
                     <DownloadCv />

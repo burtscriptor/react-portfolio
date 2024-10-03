@@ -8,11 +8,6 @@
 }
 
 
-.about-banner-image { 
-    height: 10vmin;
-    width: 100%;
-}
-
 .about-header h1 {
     font-size: 8vmin;
     color: var(--light-blue)
@@ -43,6 +38,8 @@
     padding-top: 5vmin;
     display:grid;
     grid-template-rows: auto 1fr; 
+    padding-left: 5vmin;
+    padding-right: 5vmin;
 }
 
 .about-me-text-container-one {
@@ -58,7 +55,7 @@
 }
 
 .about-me-text-container-one h2 {
-    font-size: 6vmin;
+    font-size: 8vmin;
     padding-top: 1vmin;
 }
 
@@ -92,7 +89,7 @@
 
 .child-one p {
     text-align: left;
-    line-height: 5.4vmin;
+    line-height: 7vmin;
     font-size: 5vmin;
     color:black;
     max-width: 45ch;
