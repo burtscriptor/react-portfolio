@@ -44,7 +44,7 @@ const projectsInfoArray = [
     },
 
     { name: "ISS Locator", image: `${image3}`, text: "The ISS orbits the Earth every 90 minutes. Watch it travel across the globe. The location of the ISS is displayed on an interactive Google React Map and updates every seven seconds. What's next? Optimise memory usage.",
-    technologies: [ 'Google-React-Maps','React', 'HTML', 'Node/ Express.js' ], 
+    technologies: [ 'React', 'Google-React-Maps', 'Node/ Express.js','HTML' ], 
     keyPointOne: [ { title: "Frontend", 
       text: ["I took a deep dive into google-react-maps documentation to learn how to use the library.", " I conditional render elements based on whether or not an error is encountered and data is load. To achieve this I use booleans." ]}
     ],
@@ -58,7 +58,7 @@ const projectsInfoArray = [
     },
 
     { name: "Wind Meter", image: `${image4}`, text: "Contributing to this project started by senior developers, which measures windspeed and direction at the Blackheath paraglider launch site. Said information is then viewable on a private web page.",
-    technologies: [ 'HTML', 'AWS','GitHub Actions', 'Git Version Control' ], 
+    technologies: [ 'HTML', 'GitHub Actions', 'Git Version Control','AWS' ], 
     title: "Key learnings",
     keyPointOne: [ { title: 'CI/CD', text: ["I've been learning about streamlining CI/CD using GitHub actions.", " I've become fimilar with writing and editoring .YAML files to autmate deployment processes." ]} 
     ],  
@@ -91,11 +91,22 @@ const projectsInfoArray = [
 const Projects = () => {
     const [index, setIndex] = useState(0);
 
-
     const handleIndex = (projectNo) => {
         setIndex(projectNo)
     };
 
+    const handleNext = (direction) => {
+        direction === 0 ? handleBack() : handleForward();
+    };
+    
+    const handleBack = () => {
+       setIndex((prevIndex) => (prevIndex === 0 ? projectsInfoArray.length - 1 : prevIndex - 1));
+    };
+    
+    const handleForward = () => {
+        setIndex((prevIndex) => (prevIndex === projectsInfoArray.length - 1 ? 0 : prevIndex + 1));
+    };
+    
     return (
         <main className="projects">
             <div className="projects_header">
@@ -103,11 +114,11 @@ const Projects = () => {
                 </div>
 
                 <div className="project_selector">
-                    <div className="cards" onMouseEnter={()=> handleIndex(0)}>Project 1</div>
-                    <div className="cards" onMouseEnter={()=> handleIndex(1)}>Project 2</div>
-                    <div className="cards" onMouseEnter={()=> handleIndex(2)}>Project 3</div>
-                    <div className="cards" onMouseEnter={()=> handleIndex(3)}>Project 4</div>
-                    <div className="cards" onMouseEnter={()=> handleIndex(4)}>Project 5</div>
+                    <div className={ index === 0 ? "cards highlight" : "cards" } onMouseEnter={()=> handleIndex(0)}>Project 1</div>
+                    <div className={ index === 1 ? "cards highlight" : "cards" } onMouseEnter={()=> handleIndex(1)}>Project 2</div>
+                    <div className={ index === 2 ? "cards highlight" : "cards" } onMouseEnter={()=> handleIndex(2)}>Project 3</div>
+                    <div className={ index === 3 ? "cards highlight" : "cards" } onMouseEnter={()=> handleIndex(3)}>Project 4</div>
+                    <div className={ index === 4 ? "cards highlight" : "cards" } onMouseEnter={()=> handleIndex(4)}>Project 5</div>
                 </div>
 
             
@@ -119,6 +130,13 @@ const Projects = () => {
                             <img src={projectsInfoArray[index].image} />
                         </div>
                        
+                       <div className="text_container">
+
+                        <div className="next_button" onClick={()=> handleNext(0)}>
+                            <span className="upper_span_left"></span>
+                            <span className="lower_span_left"></span>
+                            </div>
+
                        <div className="project_text">
                        <div className="project_title" >
                             <h4>{projectsInfoArray[index].name}</h4>
@@ -146,6 +164,11 @@ const Projects = () => {
                         <p className="lblue">{projectsInfoArray[index].technologies[2]}</p>
                         <p className="white">{projectsInfoArray[index].technologies[3]}</p>
                         </div>
+                        </div>
+                        <div className="next_button" onClick={()=> handleNext(1)}>
+                            <span className="upper_span_right"></span>
+                            <span className="lower_span_right"></span>
+                            </div>
                         </div>
 
                     </div>

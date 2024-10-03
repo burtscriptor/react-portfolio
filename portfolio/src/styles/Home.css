@@ -35,23 +35,30 @@
 
 .home-text h2 {
     font-size: 4vmin;
+    background-color: rgb(32, 31, 71);
+    padding: 2vmin;
+    padding-left: 6vmin;
+    padding-right: 6vmin;
+    border-radius: 15px;
 }
 
 .home-text p {
     color:white;
     width: 100%;
-    font-size: 3vmin;
-    line-height: 3.5vmin;
+    font-size: 5vmin;
+    line-height: 5.5vmin;
     text-align: center;
     max-width: 45ch;
 }
 
+
 .home-punchline-title p {
-    margin:2vmin;
-    margin-bottom: 2vmin;
+    margin-top:2vmin;
     font-size: 4vmin;
     color: var(--light-blue);
     text-align: center;
+    padding-left: 3vmin;
+    padding-right: 3vmin;
 }
 
 

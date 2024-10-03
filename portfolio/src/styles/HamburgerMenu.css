@@ -19,7 +19,7 @@
     border:0.2vmin solid rgba(195, 198, 207, 0.629);
     border-radius: 15px;
    position: fixed;
-    height: 5vmin;
+    height: 10vmin;
     top:4.5vmin;
     right:11vmin;
    display:flex;
@@ -27,9 +27,9 @@
    justify-content: start;
    align-items: center;
    gap:5vmin;
-    padding-right:3vmin;
-    padding-left: 3vmin;
-    background-color: rgba(195, 198, 207, 0.629);
+    padding-right:5vmin;
+    padding-left: 5vmin;
+    background-color: yellow;
     z-index:10;
 }
 
@@ -48,7 +48,7 @@
 .nav_bar a {
     color: var(--light-purple);
     text-align: center;
-    font-size: 2vmin;
+    font-size: 3vmin;
     scale: 1.2;
     text-decoration:double;
 }

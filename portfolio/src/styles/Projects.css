@@ -11,7 +11,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    gap:2vmin;
+    
 }
 
 .projects_header h2 {
@@ -45,9 +45,15 @@
     cursor: pointer;
 }
 
+.highlight {
+    flex:2 ;
+    text-decoration: underline;
+    border-right: 0.1vmin solid black;
+}
+
 .project_container {
     border-radius: 12px;
-    width: 80%;
+    width: 95%;
     height: fit-content;
     margin-left: 2vmin;
     margin-right: 2vmin;
@@ -75,6 +81,43 @@
     padding-right: 5vmin;
 }
 
+.text_container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.next_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.next_button span{
+    border:0.2vmin solid white;
+    width: 4vmin;
+    opacity: 1;
+}
+
+.upper_span_left {
+    transform: translateY(-2.8vmin) rotate(-45deg);
+}
+
+.lower_span_left {
+    transform: translateX(-4vmin) rotate(230deg);
+}
+
+ .upper_span_right {
+    transform: translateY(-7vmin) rotate(45deg) translateX(6vmin);
+}
+
+
+.lower_span_right {
+    transform: rotate(-230deg) translateX(0vmin) translateY(-0.3vmin);
+}
+
 .project_text {
     display: flex;
     flex-direction: column;
@@ -91,12 +134,14 @@
 .project_image img {
    width: 40vmin;
    height: 20vmin;
-   
 }
 
+.project_image img:hover {
+    scale: 1.5;
+}
 
 .project_title h4 {
-    font-size:3vmin;
+    font-size:5vmin;
     margin: 0; 
 }
 
@@ -114,9 +159,10 @@
 
 .project_descripton p {
     max-width: 45ch;
-    height: 12vmin;
-    font-size: 2vmin;
+    height: 20vmin;
+    font-size: 3vmin;
 }
+
 
 .tech_tabs {
     margin-top: 2vmin;
@@ -134,7 +180,7 @@
     width: fit-content;
     height: min-content;
     text-align: center;
-    font-size: 1.5vmin;
+    font-size: 2.5vmin;
     color: #d3d3d3;
     gap:2vmin;
 }
@@ -165,10 +211,10 @@
 .key_points_one p, .key_points_two p,
 .key_points_three p {
     text-align: left;
-    font-size: 2vmin;
+    font-size: 3vmin;
     max-width: 45ch;
-
 }
+
 
 .icon_title {
     display:flex;
@@ -207,5 +253,13 @@
 
     .p_c_child_right {
         gap:2vmin;
+    }
+
+    .next_button:hover {
+        cursor: pointer;
+    }
+
+    .next_button span {
+        opacity: 1;
     }
 }

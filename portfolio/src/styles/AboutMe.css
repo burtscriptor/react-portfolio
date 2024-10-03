@@ -92,11 +92,12 @@
 
 .child-one p {
     text-align: left;
-    line-height: 3vmin;
-    font-size: 2vmin;
+    line-height: 5.4vmin;
+    font-size: 5vmin;
     color:black;
     max-width: 45ch;
 }
+
 
 .child-two {
     align-items: end;
@@ -158,6 +159,10 @@
   border-radius: 15px; 
   background: linear-gradient(45deg, var(--green), var(--light-blue)); 
   box-shadow: 25px 50px 200px 10px rgb(0,0,0,0.3);
+}
+
+.skill-card:hover {
+    transform: rotateX(30deg);
 }
 
 
