@@ -18,9 +18,8 @@ const Home = () => {
                 </div>
 
                 <div className="home-text">
-                    <h2>Hi! Nice to meet you!</h2>
                     <p>
-                        I love logic and creativity and my passion is combining both for solve complex problems. 
+                        I love logic and creativity and using them to solve complex problems. 
                         Whether it's optimising front-end interfaces to create seamless user experiences, 
                         or structuring scalable APIs, I grow with the challenges of development. 
                         I thrive on crafting apps and collaborating with people. While others might catch up on 
