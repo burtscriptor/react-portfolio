@@ -68,7 +68,7 @@ const projectsInfoArray = [
      keyPointThree: [ {title: "GitHub",
        text: [ "We have been using GitHub issues system to assign and take ownership of ongoing feature development and changes."]},
     ],
-    links: ["",""]
+    links: ["https://github.com/NickRoach/blackheath-wind-meter",""]
     },
 
     { name: "Affordable Commute Calculator", image: `${image5}`, text: "A team project react web app that looks up property sales in Sydney relative to a a user defined point of interest and sorts according to travel time. Authenicated users can create and edit a list of favourited and saved properties. ",
@@ -153,9 +153,9 @@ const Projects = () => {
                             <a href={projectsInfoArray[index].links[0]} target="_blank" rel="noopener noreferrer">
                                 <img src={icon1} alt="Link 1" />
                             </a>
-                            <a href={projectsInfoArray[index].links[1]} target="_blank" rel="noopener noreferrer">
+                           { index === 3 ? "" : <a href={projectsInfoArray[index].links[1]} target="_blank" rel="noopener noreferrer">
                                 <img src={icon2} alt="Link 2" />
-                            </a>
+                            </a> }
                         </div>
 
                         <div className="tech_tabs">
